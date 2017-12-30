@@ -1,0 +1,6 @@
+framework module TexturedMaaku {
+  umbrella header "TexturedMaaku-umbrella.h"
+
+  export *
+  module * { export * }
+}

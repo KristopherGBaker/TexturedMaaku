@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+inhibit_all_warnings!
+use_frameworks!
+
+abstract_target 'TexturedMaakuDemoTargets' do
+  pod 'TexturedMaaku/Core', :path => '..'
+  pod 'TexturedMaaku/Plugins', :path => '..'
+
+  target 'TexturedMaakuDemo' do
+    platform :ios, '11.0'
+  end
+end

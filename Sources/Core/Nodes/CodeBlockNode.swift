@@ -1,0 +1,86 @@
+//
+//  CodeBlockNode.swift
+//  TexturedMaaku
+//
+//  Created by Kris Baker on 12/21/17.
+//  Copyright © 2017 Kristopher Baker. All rights reserved.
+//
+
+import AsyncDisplayKit
+import Maaku
+import UIKit
+
+/// Represents a markdown code block as an ASDisplayNode
+public class CodeBlockNode: ASDisplayNode {
+
+    /// The text node.
+    private let textNode = ASTextNode()
+
+    /// The background node.
+    private let backgroundNode = ASImageNode()
+
+    /// The insets.
+    private let insets: UIEdgeInsets
+
+    /// Indicates if the node is nested.
+    private let nested: Bool
+
+    /// Initializes a CodeBlockNode with the specified code block and style.
+    ///
+    /// - Parameters:
+    ///     - codeBlock: The markdown code block.
+    ///     - style: The document style.
+    ///     - nested: Indicates if the node is nested.
+    /// - Returns:
+    ///     The initialized CodeBlockNode.
+    public init(codeBlock: CodeBlock, style: DocumentStyle, nested: Bool = false) {
+        insets = style.insets(.codeBlock)
+        self.nested = nested
+        super.init()
+
+        automaticallyManagesSubnodes = true
+        setupCodeBlock(codeBlock, style: style)
+    }
+
+    /// Configures a code block.
+    ///
+    /// - Parameters:
+    ///     - codeBlock: The markdown code block.
+    ///     - style: The document style.
+    private func setupCodeBlock(_ codeBlock: CodeBlock, style: DocumentStyle) {
+        var code = codeBlock.code
+
+        // remove trailing newline
+        if code.hasSuffix("\n") {
+            code.removeLast()
+        }
+
+        // consider using https://github.com/alehed/SyntaxKit for syntax coloring (enabled as an option/subspec)
+        textNode.style.flexShrink = 1.0
+        textNode.style.flexGrow = 1.0
+        textNode.attributedText = CodeBlock(code: code, info: codeBlock.info).attributedText(style: style.maakuStyle)
+
+        backgroundNode.image = UIImage.as_resizableRoundedImage(withCornerRadius: 3.0,
+                                                                cornerColor: nil,
+                                                                fill: style.color(.codeBlockBackground))
+    }
+
+    public override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        var nodeInsets = insets
+        let textInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+
+        if nested {
+            nodeInsets = .zero
+            nodeInsets.left = insets.left
+        }
+
+        if constrainedSize.max.width > 0, constrainedSize.max.width < .greatestFiniteMagnitude {
+            textNode.style.width = ASDimensionMake(constrainedSize.max.width - textInsets.left - textInsets.right)
+        }
+
+        let textInsetSpec = ASInsetLayoutSpec(insets: textInsets, child: textNode)
+        let backgroundSpec = ASBackgroundLayoutSpec(child: textInsetSpec, background: backgroundNode)
+
+        return ASInsetLayoutSpec(insets: nodeInsets, child: backgroundSpec)
+    }
+}

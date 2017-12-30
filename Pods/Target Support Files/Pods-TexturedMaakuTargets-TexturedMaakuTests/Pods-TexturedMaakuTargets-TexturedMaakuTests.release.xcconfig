@@ -1,0 +1,13 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks "$PODS_CONFIGURATION_BUILD_DIR/Maaku" "$PODS_CONFIGURATION_BUILD_DIR/Nimble" "$PODS_CONFIGURATION_BUILD_DIR/PINCache" "$PODS_CONFIGURATION_BUILD_DIR/PINOperation" "$PODS_CONFIGURATION_BUILD_DIR/PINRemoteImage" "$PODS_CONFIGURATION_BUILD_DIR/Quick" "$PODS_CONFIGURATION_BUILD_DIR/Texture" "$PODS_CONFIGURATION_BUILD_DIR/libcmark_gfm" "$PODS_CONFIGURATION_BUILD_DIR/youtube-ios-player-helper"
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/SwiftLint"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Maaku/Maaku.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Nimble/Nimble.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/PINCache/PINCache.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/PINOperation/PINOperation.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/PINRemoteImage/PINRemoteImage.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Quick/Quick.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Texture/AsyncDisplayKit.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/libcmark_gfm/libcmark_gfm.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/youtube-ios-player-helper/youtube_ios_player_helper.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/SwiftLint"
+OTHER_LDFLAGS = $(inherited) -framework "AsyncDisplayKit" -framework "Maaku" -framework "Nimble" -framework "PINCache" -framework "PINOperation" -framework "PINRemoteImage" -framework "Quick" -framework "libcmark_gfm" -framework "youtube_ios_player_helper"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

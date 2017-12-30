@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91674A3BDB77E652B847836D /* Pods_TexturedMaakuTargets_TexturedMaakuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221031736E80FAA2CD1DD216 /* Pods_TexturedMaakuTargets_TexturedMaakuTests.framework */; };
+		A2298AED1FEF273200A0E275 /* TexturedMaaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A2298AEC1FEF273200A0E275 /* TexturedMaaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A254E3A21FF03C3100C48E71 /* NodePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254E3A11FF03C3000C48E71 /* NodePlugin.swift */; };
+		A254E3A41FF03EC500C48E71 /* DocumentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254E3A31FF03EC500C48E71 /* DocumentStyle.swift */; };
+		A254E3A61FF0463E00C48E71 /* Collection+TexturedMaaku.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254E3A51FF0463E00C48E71 /* Collection+TexturedMaaku.swift */; };
+		A254E3A81FF0A8A100C48E71 /* ListItemNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254E3A71FF0A8A100C48E71 /* ListItemNode.swift */; };
+		A26823A61FEC9FCD006780A9 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823A51FEC9FCD006780A9 /* TableNode.swift */; };
+		A26824DF1FECC5EB006780A9 /* Linkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26824DE1FECC5EB006780A9 /* Linkable.swift */; };
+		A26824E11FECCAB1006780A9 /* WrapperCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26824E01FECCAB1006780A9 /* WrapperCellNode.swift */; };
+		A26824E91FECD72A006780A9 /* Block+TexturedMaaku.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26824E81FECD72A006780A9 /* Block+TexturedMaaku.swift */; };
+		A26824EB1FECDC01006780A9 /* CodeBlockNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26824EA1FECDC01006780A9 /* CodeBlockNode.swift */; };
+		A26824ED1FECDC0C006780A9 /* FootnoteDefinitionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26824EC1FECDC0C006780A9 /* FootnoteDefinitionNode.swift */; };
+		A26824EF1FED7802006780A9 /* TableRowNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26824EE1FED7802006780A9 /* TableRowNode.swift */; };
+		A26824F11FED7812006780A9 /* TableCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26824F01FED7812006780A9 /* TableCellNode.swift */; };
+		A26824F31FED8BC5006780A9 /* TableAlignment+TexturedMaaku.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26824F21FED8BC5006780A9 /* TableAlignment+TexturedMaaku.swift */; };
+		A276D5A01FEB26DE006D5715 /* TexturedMaaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A276D5961FEB26DE006D5715 /* TexturedMaaku.framework */; };
+		A276D5EE1FEB29B2006D5715 /* HorizontalRuleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D5D41FEB29B2006D5715 /* HorizontalRuleNode.swift */; };
+		A276D5EF1FEB29B2006D5715 /* ParagraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D5D51FEB29B2006D5715 /* ParagraphNode.swift */; };
+		A276D5F41FEB29B2006D5715 /* CircleHeaderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D5DA1FEB29B2006D5715 /* CircleHeaderNode.swift */; };
+		A276D5F51FEB29B2006D5715 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D5DB1FEB29B2006D5715 /* ListNode.swift */; };
+		A276D5F71FEB29B2006D5715 /* DocumentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D5DD1FEB29B2006D5715 /* DocumentNode.swift */; };
+		A276D5F81FEB29B2006D5715 /* BlockQuoteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D5DE1FEB29B2006D5715 /* BlockQuoteNode.swift */; };
+		A276D5F91FEB29B2006D5715 /* HeadingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D5DF1FEB29B2006D5715 /* HeadingNode.swift */; };
+		A276D5FB1FEB29B2006D5715 /* String+TexturedMaaku.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D5E21FEB29B2006D5715 /* String+TexturedMaaku.swift */; };
+		A276D5FC1FEB29B2006D5715 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D5E41FEB29B2006D5715 /* DocumentViewController.swift */; };
+		A276D6001FEB29B2006D5715 /* YoutubeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D5EA1FEB29B2006D5715 /* YoutubeNode.swift */; };
+		A2ECDACE1FF76BC6003692AB /* Heading+TexturedMaaku.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDACD1FF76BC6003692AB /* Heading+TexturedMaaku.swift */; };
+		A2ECDAD01FF8276A003692AB /* DocumentStyleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDACF1FF8276A003692AB /* DocumentStyleSpec.swift */; };
+		A2ECDAD71FF827B5003692AB /* BlockExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDAD61FF827B5003692AB /* BlockExtensionSpec.swift */; };
+		A2ECDAD91FF827C2003692AB /* CollectionExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDAD81FF827C2003692AB /* CollectionExtensionSpec.swift */; };
+		A2ECDADB1FF827CD003692AB /* HeadingExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDADA1FF827CD003692AB /* HeadingExtensionSpec.swift */; };
+		A2ECDADD1FF827D7003692AB /* StringExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDADC1FF827D7003692AB /* StringExtensionSpec.swift */; };
+		A2ECDADF1FF827E1003692AB /* TableAlignmentExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDADE1FF827E1003692AB /* TableAlignmentExtensionSpec.swift */; };
+		CA6B0B607943791A410F35E8 /* Pods_TexturedMaakuTargets_TexturedMaaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7A7882F6AA5ED5ABECFAD9 /* Pods_TexturedMaakuTargets_TexturedMaaku.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A276D5A11FEB26DE006D5715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A276D58D1FEB26DE006D5715 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A276D5951FEB26DE006D5715;
+			remoteInfo = TexturedMaaku;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		221031736E80FAA2CD1DD216 /* Pods_TexturedMaakuTargets_TexturedMaakuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturedMaakuTargets_TexturedMaakuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F3E55F998CF4A45C787674 /* Pods-TexturedMaakuTargets-TexturedMaakuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuTargets-TexturedMaakuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TexturedMaakuTargets-TexturedMaakuTests/Pods-TexturedMaakuTargets-TexturedMaakuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37E976EF27E475191C55DC33 /* Pods-TexturedMaakuTargets-TexturedMaakuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuTargets-TexturedMaakuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TexturedMaakuTargets-TexturedMaakuTests/Pods-TexturedMaakuTargets-TexturedMaakuTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D7A7882F6AA5ED5ABECFAD9 /* Pods_TexturedMaakuTargets_TexturedMaaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturedMaakuTargets_TexturedMaaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		763E1BAD4FCEA2BF4A982886 /* Pods-TexturedMaakuTargets-TexturedMaaku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuTargets-TexturedMaaku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TexturedMaakuTargets-TexturedMaaku/Pods-TexturedMaakuTargets-TexturedMaaku.debug.xcconfig"; sourceTree = "<group>"; };
+		A2298AEC1FEF273200A0E275 /* TexturedMaaku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TexturedMaaku.h; sourceTree = "<group>"; };
+		A254E3A11FF03C3000C48E71 /* NodePlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodePlugin.swift; sourceTree = "<group>"; };
+		A254E3A31FF03EC500C48E71 /* DocumentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentStyle.swift; sourceTree = "<group>"; };
+		A254E3A51FF0463E00C48E71 /* Collection+TexturedMaaku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+TexturedMaaku.swift"; sourceTree = "<group>"; };
+		A254E3A71FF0A8A100C48E71 /* ListItemNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemNode.swift; sourceTree = "<group>"; };
+		A26823A51FEC9FCD006780A9 /* TableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNode.swift; sourceTree = "<group>"; };
+		A26824DE1FECC5EB006780A9 /* Linkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Linkable.swift; sourceTree = "<group>"; };
+		A26824E01FECCAB1006780A9 /* WrapperCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperCellNode.swift; sourceTree = "<group>"; };
+		A26824E81FECD72A006780A9 /* Block+TexturedMaaku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Block+TexturedMaaku.swift"; sourceTree = "<group>"; };
+		A26824EA1FECDC01006780A9 /* CodeBlockNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockNode.swift; sourceTree = "<group>"; };
+		A26824EC1FECDC0C006780A9 /* FootnoteDefinitionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootnoteDefinitionNode.swift; sourceTree = "<group>"; };
+		A26824EE1FED7802006780A9 /* TableRowNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowNode.swift; sourceTree = "<group>"; };
+		A26824F01FED7812006780A9 /* TableCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellNode.swift; sourceTree = "<group>"; };
+		A26824F21FED8BC5006780A9 /* TableAlignment+TexturedMaaku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableAlignment+TexturedMaaku.swift"; sourceTree = "<group>"; };
+		A276D5961FEB26DE006D5715 /* TexturedMaaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TexturedMaaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A276D59A1FEB26DE006D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A276D59F1FEB26DE006D5715 /* TexturedMaakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TexturedMaakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A276D5A61FEB26DE006D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A276D5CE1FEB2966006D5715 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A276D5CF1FEB2966006D5715 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A276D5D01FEB2966006D5715 /* TexturedMaaku.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = TexturedMaaku.podspec; sourceTree = "<group>"; };
+		A276D5D41FEB29B2006D5715 /* HorizontalRuleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalRuleNode.swift; sourceTree = "<group>"; };
+		A276D5D51FEB29B2006D5715 /* ParagraphNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphNode.swift; sourceTree = "<group>"; };
+		A276D5DA1FEB29B2006D5715 /* CircleHeaderNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleHeaderNode.swift; sourceTree = "<group>"; };
+		A276D5DB1FEB29B2006D5715 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
+		A276D5DD1FEB29B2006D5715 /* DocumentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentNode.swift; sourceTree = "<group>"; };
+		A276D5DE1FEB29B2006D5715 /* BlockQuoteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockQuoteNode.swift; sourceTree = "<group>"; };
+		A276D5DF1FEB29B2006D5715 /* HeadingNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadingNode.swift; sourceTree = "<group>"; };
+		A276D5E21FEB29B2006D5715 /* String+TexturedMaaku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TexturedMaaku.swift"; sourceTree = "<group>"; };
+		A276D5E41FEB29B2006D5715 /* DocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
+		A276D5EA1FEB29B2006D5715 /* YoutubeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeNode.swift; sourceTree = "<group>"; };
+		A288473D1FF4B3C700558555 /* .swiftlint.yml */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A2ECDACD1FF76BC6003692AB /* Heading+TexturedMaaku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Heading+TexturedMaaku.swift"; sourceTree = "<group>"; };
+		A2ECDACF1FF8276A003692AB /* DocumentStyleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentStyleSpec.swift; sourceTree = "<group>"; };
+		A2ECDAD61FF827B5003692AB /* BlockExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockExtensionSpec.swift; sourceTree = "<group>"; };
+		A2ECDAD81FF827C2003692AB /* CollectionExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensionSpec.swift; sourceTree = "<group>"; };
+		A2ECDADA1FF827CD003692AB /* HeadingExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingExtensionSpec.swift; sourceTree = "<group>"; };
+		A2ECDADC1FF827D7003692AB /* StringExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionSpec.swift; sourceTree = "<group>"; };
+		A2ECDADE1FF827E1003692AB /* TableAlignmentExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAlignmentExtensionSpec.swift; sourceTree = "<group>"; };
+		A2ECDAE71FF858F0003692AB /* .travis.yml */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = .travis.yml; sourceTree = "<group>"; };
+		AFABC043481999F0DB7AABF3 /* Pods-TexturedMaakuTargets-TexturedMaaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuTargets-TexturedMaaku.release.xcconfig"; path = "Pods/Target Support Files/Pods-TexturedMaakuTargets-TexturedMaaku/Pods-TexturedMaakuTargets-TexturedMaaku.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A276D5921FEB26DE006D5715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6B0B607943791A410F35E8 /* Pods_TexturedMaakuTargets_TexturedMaaku.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A276D59C1FEB26DE006D5715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A276D5A01FEB26DE006D5715 /* TexturedMaaku.framework in Frameworks */,
+				91674A3BDB77E652B847836D /* Pods_TexturedMaakuTargets_TexturedMaakuTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A276D58C1FEB26DE006D5715 = {
+			isa = PBXGroup;
+			children = (
+				A2ECDAE71FF858F0003692AB /* .travis.yml */,
+				A288473D1FF4B3C700558555 /* .swiftlint.yml */,
+				A276D5CE1FEB2966006D5715 /* LICENSE */,
+				A276D5CF1FEB2966006D5715 /* README.md */,
+				A276D5D01FEB2966006D5715 /* TexturedMaaku.podspec */,
+				A276D5981FEB26DE006D5715 /* Sources */,
+				A276D5A31FEB26DE006D5715 /* Tests */,
+				A276D5971FEB26DE006D5715 /* Products */,
+				E48D8F69D343D15DD172BDC7 /* Pods */,
+				AA7A286954A14EE4210D6C5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A276D5971FEB26DE006D5715 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A276D5961FEB26DE006D5715 /* TexturedMaaku.framework */,
+				A276D59F1FEB26DE006D5715 /* TexturedMaakuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A276D5981FEB26DE006D5715 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A2298AEC1FEF273200A0E275 /* TexturedMaaku.h */,
+				A276D59A1FEB26DE006D5715 /* Info.plist */,
+				A276D5D11FEB29B2006D5715 /* Core */,
+				A276D5E61FEB29B2006D5715 /* Plugins */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A276D5A31FEB26DE006D5715 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A276D6061FEB3527006D5715 /* Core */,
+				A276D5A61FEB26DE006D5715 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		A276D5D11FEB29B2006D5715 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A254E3A31FF03EC500C48E71 /* DocumentStyle.swift */,
+				A26824DE1FECC5EB006780A9 /* Linkable.swift */,
+				A254E3A11FF03C3000C48E71 /* NodePlugin.swift */,
+				A276D5E01FEB29B2006D5715 /* Extensions */,
+				A276D5D21FEB29B2006D5715 /* Nodes */,
+				A276D5E31FEB29B2006D5715 /* ViewControllers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A276D5D21FEB29B2006D5715 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				A276D5DE1FEB29B2006D5715 /* BlockQuoteNode.swift */,
+				A276D5DA1FEB29B2006D5715 /* CircleHeaderNode.swift */,
+				A26824EA1FECDC01006780A9 /* CodeBlockNode.swift */,
+				A276D5DD1FEB29B2006D5715 /* DocumentNode.swift */,
+				A26824EC1FECDC0C006780A9 /* FootnoteDefinitionNode.swift */,
+				A276D5DF1FEB29B2006D5715 /* HeadingNode.swift */,
+				A276D5D41FEB29B2006D5715 /* HorizontalRuleNode.swift */,
+				A254E3A71FF0A8A100C48E71 /* ListItemNode.swift */,
+				A276D5DB1FEB29B2006D5715 /* ListNode.swift */,
+				A276D5D51FEB29B2006D5715 /* ParagraphNode.swift */,
+				A26824F01FED7812006780A9 /* TableCellNode.swift */,
+				A26823A51FEC9FCD006780A9 /* TableNode.swift */,
+				A26824EE1FED7802006780A9 /* TableRowNode.swift */,
+				A26824E01FECCAB1006780A9 /* WrapperCellNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		A276D5E01FEB29B2006D5715 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A26824E81FECD72A006780A9 /* Block+TexturedMaaku.swift */,
+				A254E3A51FF0463E00C48E71 /* Collection+TexturedMaaku.swift */,
+				A2ECDACD1FF76BC6003692AB /* Heading+TexturedMaaku.swift */,
+				A276D5E21FEB29B2006D5715 /* String+TexturedMaaku.swift */,
+				A26824F21FED8BC5006780A9 /* TableAlignment+TexturedMaaku.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A276D5E31FEB29B2006D5715 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A276D5E41FEB29B2006D5715 /* DocumentViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A276D5E61FEB29B2006D5715 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				A276D5EA1FEB29B2006D5715 /* YoutubeNode.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		A276D6061FEB3527006D5715 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A2ECDACF1FF8276A003692AB /* DocumentStyleSpec.swift */,
+				A2ECDAD31FF8278C003692AB /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A2ECDAD31FF8278C003692AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A2ECDAD61FF827B5003692AB /* BlockExtensionSpec.swift */,
+				A2ECDAD81FF827C2003692AB /* CollectionExtensionSpec.swift */,
+				A2ECDADA1FF827CD003692AB /* HeadingExtensionSpec.swift */,
+				A2ECDADC1FF827D7003692AB /* StringExtensionSpec.swift */,
+				A2ECDADE1FF827E1003692AB /* TableAlignmentExtensionSpec.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA7A286954A14EE4210D6C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D7A7882F6AA5ED5ABECFAD9 /* Pods_TexturedMaakuTargets_TexturedMaaku.framework */,
+				221031736E80FAA2CD1DD216 /* Pods_TexturedMaakuTargets_TexturedMaakuTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E48D8F69D343D15DD172BDC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				763E1BAD4FCEA2BF4A982886 /* Pods-TexturedMaakuTargets-TexturedMaaku.debug.xcconfig */,
+				AFABC043481999F0DB7AABF3 /* Pods-TexturedMaakuTargets-TexturedMaaku.release.xcconfig */,
+				31F3E55F998CF4A45C787674 /* Pods-TexturedMaakuTargets-TexturedMaakuTests.debug.xcconfig */,
+				37E976EF27E475191C55DC33 /* Pods-TexturedMaakuTargets-TexturedMaakuTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A276D5931FEB26DE006D5715 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2298AED1FEF273200A0E275 /* TexturedMaaku.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A276D5951FEB26DE006D5715 /* TexturedMaaku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A276D5AA1FEB26DE006D5715 /* Build configuration list for PBXNativeTarget "TexturedMaaku" */;
+			buildPhases = (
+				1C3330D99A3C2E5D23DE6133 /* [CP] Check Pods Manifest.lock */,
+				A276D5911FEB26DE006D5715 /* Sources */,
+				A276D5921FEB26DE006D5715 /* Frameworks */,
+				A276D5931FEB26DE006D5715 /* Headers */,
+				A276D5941FEB26DE006D5715 /* Resources */,
+				5E1A6B1DD685AB123C20C0A4 /* [CP] Copy Pods Resources */,
+				A288473E1FF4BB0A00558555 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TexturedMaaku;
+			productName = TexturedMaaku;
+			productReference = A276D5961FEB26DE006D5715 /* TexturedMaaku.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A276D59E1FEB26DE006D5715 /* TexturedMaakuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A276D5AD1FEB26DE006D5715 /* Build configuration list for PBXNativeTarget "TexturedMaakuTests" */;
+			buildPhases = (
+				50BD9E31782ACA3470D647A6 /* [CP] Check Pods Manifest.lock */,
+				A276D59B1FEB26DE006D5715 /* Sources */,
+				A276D59C1FEB26DE006D5715 /* Frameworks */,
+				A276D59D1FEB26DE006D5715 /* Resources */,
+				CCA3EFE154B7DC51F18A5129 /* [CP] Embed Pods Frameworks */,
+				BB4C90F99DA650B83BA665CF /* [CP] Copy Pods Resources */,
+				A288473F1FF4BB0F00558555 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A276D5A21FEB26DE006D5715 /* PBXTargetDependency */,
+			);
+			name = TexturedMaakuTests;
+			productName = TexturedMaakuTests;
+			productReference = A276D59F1FEB26DE006D5715 /* TexturedMaakuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A276D58D1FEB26DE006D5715 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Kristopher Baker";
+				TargetAttributes = {
+					A276D5951FEB26DE006D5715 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A276D59E1FEB26DE006D5715 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A276D5901FEB26DE006D5715 /* Build configuration list for PBXProject "TexturedMaaku" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A276D58C1FEB26DE006D5715;
+			productRefGroup = A276D5971FEB26DE006D5715 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A276D5951FEB26DE006D5715 /* TexturedMaaku */,
+				A276D59E1FEB26DE006D5715 /* TexturedMaakuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A276D5941FEB26DE006D5715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A276D59D1FEB26DE006D5715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C3330D99A3C2E5D23DE6133 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TexturedMaakuTargets-TexturedMaaku-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50BD9E31782ACA3470D647A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TexturedMaakuTargets-TexturedMaakuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E1A6B1DD685AB123C20C0A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TexturedMaakuTargets-TexturedMaaku/Pods-TexturedMaakuTargets-TexturedMaaku-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A288473E1FF4BB0A00558555 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		A288473F1FF4BB0F00558555 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		BB4C90F99DA650B83BA665CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TexturedMaakuTargets-TexturedMaakuTests/Pods-TexturedMaakuTargets-TexturedMaakuTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCA3EFE154B7DC51F18A5129 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TexturedMaakuTargets-TexturedMaakuTests/Pods-TexturedMaakuTargets-TexturedMaakuTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Maaku/Maaku.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+				"${BUILT_PRODUCTS_DIR}/libcmark_gfm/libcmark_gfm.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Maaku.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libcmark_gfm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TexturedMaakuTargets-TexturedMaakuTests/Pods-TexturedMaakuTargets-TexturedMaakuTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A276D5911FEB26DE006D5715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26824F11FED7812006780A9 /* TableCellNode.swift in Sources */,
+				A26824EB1FECDC01006780A9 /* CodeBlockNode.swift in Sources */,
+				A26824DF1FECC5EB006780A9 /* Linkable.swift in Sources */,
+				A276D5EF1FEB29B2006D5715 /* ParagraphNode.swift in Sources */,
+				A254E3A41FF03EC500C48E71 /* DocumentStyle.swift in Sources */,
+				A276D5F51FEB29B2006D5715 /* ListNode.swift in Sources */,
+				A276D6001FEB29B2006D5715 /* YoutubeNode.swift in Sources */,
+				A254E3A21FF03C3100C48E71 /* NodePlugin.swift in Sources */,
+				A26823A61FEC9FCD006780A9 /* TableNode.swift in Sources */,
+				A276D5F41FEB29B2006D5715 /* CircleHeaderNode.swift in Sources */,
+				A276D5FC1FEB29B2006D5715 /* DocumentViewController.swift in Sources */,
+				A26824ED1FECDC0C006780A9 /* FootnoteDefinitionNode.swift in Sources */,
+				A276D5F71FEB29B2006D5715 /* DocumentNode.swift in Sources */,
+				A276D5EE1FEB29B2006D5715 /* HorizontalRuleNode.swift in Sources */,
+				A26824E11FECCAB1006780A9 /* WrapperCellNode.swift in Sources */,
+				A26824E91FECD72A006780A9 /* Block+TexturedMaaku.swift in Sources */,
+				A26824EF1FED7802006780A9 /* TableRowNode.swift in Sources */,
+				A276D5F91FEB29B2006D5715 /* HeadingNode.swift in Sources */,
+				A254E3A61FF0463E00C48E71 /* Collection+TexturedMaaku.swift in Sources */,
+				A276D5F81FEB29B2006D5715 /* BlockQuoteNode.swift in Sources */,
+				A276D5FB1FEB29B2006D5715 /* String+TexturedMaaku.swift in Sources */,
+				A2ECDACE1FF76BC6003692AB /* Heading+TexturedMaaku.swift in Sources */,
+				A254E3A81FF0A8A100C48E71 /* ListItemNode.swift in Sources */,
+				A26824F31FED8BC5006780A9 /* TableAlignment+TexturedMaaku.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A276D59B1FEB26DE006D5715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2ECDAD91FF827C2003692AB /* CollectionExtensionSpec.swift in Sources */,
+				A2ECDADF1FF827E1003692AB /* TableAlignmentExtensionSpec.swift in Sources */,
+				A2ECDADD1FF827D7003692AB /* StringExtensionSpec.swift in Sources */,
+				A2ECDADB1FF827CD003692AB /* HeadingExtensionSpec.swift in Sources */,
+				A2ECDAD71FF827B5003692AB /* BlockExtensionSpec.swift in Sources */,
+				A2ECDAD01FF8276A003692AB /* DocumentStyleSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A276D5A21FEB26DE006D5715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A276D5951FEB26DE006D5715 /* TexturedMaaku */;
+			targetProxy = A276D5A11FEB26DE006D5715 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A276D5A81FEB26DE006D5715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A276D5A91FEB26DE006D5715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A276D5AB1FEB26DE006D5715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 763E1BAD4FCEA2BF4A982886 /* Pods-TexturedMaakuTargets-TexturedMaaku.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.TexturedMaaku;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A276D5AC1FEB26DE006D5715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFABC043481999F0DB7AABF3 /* Pods-TexturedMaakuTargets-TexturedMaaku.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.TexturedMaaku;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A276D5AE1FEB26DE006D5715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31F3E55F998CF4A45C787674 /* Pods-TexturedMaakuTargets-TexturedMaakuTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.TexturedMaakuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A276D5AF1FEB26DE006D5715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37E976EF27E475191C55DC33 /* Pods-TexturedMaakuTargets-TexturedMaakuTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.TexturedMaakuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A276D5901FEB26DE006D5715 /* Build configuration list for PBXProject "TexturedMaaku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A276D5A81FEB26DE006D5715 /* Debug */,
+				A276D5A91FEB26DE006D5715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A276D5AA1FEB26DE006D5715 /* Build configuration list for PBXNativeTarget "TexturedMaaku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A276D5AB1FEB26DE006D5715 /* Debug */,
+				A276D5AC1FEB26DE006D5715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A276D5AD1FEB26DE006D5715 /* Build configuration list for PBXNativeTarget "TexturedMaakuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A276D5AE1FEB26DE006D5715 /* Debug */,
+				A276D5AF1FEB26DE006D5715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A276D58D1FEB26DE006D5715 /* Project object */;
+}

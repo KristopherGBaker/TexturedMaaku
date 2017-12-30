@@ -1,0 +1,6 @@
+framework module Pods_TexturedMaakuTargets_TexturedMaaku {
+  umbrella header "Pods-TexturedMaakuTargets-TexturedMaaku-umbrella.h"
+
+  export *
+  module * { export * }
+}

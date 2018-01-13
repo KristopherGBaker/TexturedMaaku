@@ -48,11 +48,11 @@ public class ListItemNode: ASDisplayNode, ASTextNodeDelegate, Linkable, LinkDele
             var itemStyle = style
 
             if item is Paragraph {
-                itemStyle = itemStyle.inset(type: .paragraph, insets: .zero)
+                itemStyle.insets.paragraph = .zero
             } else if item is BlockQuote {
-                itemStyle = itemStyle.inset(type: .blockQuote, insets: .zero)
+                itemStyle.insets.blockQuote = .zero
             } else if item is Heading {
-                itemStyle = itemStyle.inset(type: .heading, insets: .zero)
+                itemStyle.insets.heading = .zero
             }
 
             if let displayNode = item.displayNode(style: itemStyle, nested: true) {

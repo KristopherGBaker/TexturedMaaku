@@ -34,7 +34,7 @@ public class TableNode: ASDisplayNode, ASTextNodeDelegate, Linkable {
     /// - Returns:
     ///     The initialized TableNode.
     public init(table: Table, style: DocumentStyle, nested: Bool = false) {
-        insets = style.insets(.table)
+        insets = style.insets.table
         self.nested = nested
         super.init()
 
@@ -51,8 +51,8 @@ public class TableNode: ASDisplayNode, ASTextNodeDelegate, Linkable {
         tableRows.append(TableRowNode(row: table.header, table: table, style: style))
 
         let hr = ASDisplayNode()
-        hr.backgroundColor = style.color(.horizontalRule)
-        hr.style.flexBasis = ASDimensionMake(style.float(.horizontalRuleHeight))
+        hr.backgroundColor = style.colors.horizontalRule
+        hr.style.flexBasis = ASDimensionMake(style.values.horizontalRuleHeight)
         hr.style.spacingBefore = 5.0
         tableRows.append(hr)
 

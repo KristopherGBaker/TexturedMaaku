@@ -88,8 +88,12 @@ public extension Heading {
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
+        var headingStyle = style
+        headingStyle.fonts.current = style.font(forHeading: self)
+        headingStyle.colors.current = style.color(forHeading: self)
+
         for item in items {
-            attributed.append(item.attributedText(style: style.font(heading: self)))
+            attributed.append(item.attributedText(style: headingStyle))
         }
 
         return attributed

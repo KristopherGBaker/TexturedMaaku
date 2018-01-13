@@ -1,10 +1,15 @@
 # Maaku
 
 [![Build Status](https://travis-ci.org/KristopherGBaker/Maaku.svg?branch=master)](https://travis-ci.org/KristopherGBaker/Maaku)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Maaku.svg)](https://img.shields.io/cocoapods/v/Maaku.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Platform](https://img.shields.io/cocoapods/p/Maaku.svg?style=flat)](http://cocoadocs.org/docsets/Maaku)
 
 The Maaku framework provides a Swift wrapper around [cmark-gfm](https://github.com/github/cmark) with the addition of a Swift friendly representation of the AST. gfm extensions for tables, strikethrough, autolinks, and tag filters are supported.
 
 Maaku also supports a convention for plugins that custom renderers can use. One plugin is provided as an example.
+
+[TexturedMaaku](https://github.com/KristopherGBaker/TexturedMaaku) builds on top of Maaku together [Texture](http://texturegroup.org/) to provide a native iOS CommonMark rendering framework in Swift.
 
 + [Installation](#installation)
 + [Core](#core)
@@ -54,7 +59,7 @@ $ brew install carthage
 To integrate Maaku into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "KristopherGBaker/Maaku" ~> 0.1.5
+github "KristopherGBaker/Maaku" ~> 0.2.0
 ```
 
 Run `carthage update` to build the framework and drag the built `Maaku.framework` into your Xcode project.
@@ -67,7 +72,7 @@ Once you have your Swift package set up, adding Maaku as a dependency is as easy
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/KristopherGBaker/Maaku.git", from: "0.1.5")
+    .package(url: "https://github.com/KristopherGBaker/Maaku.git", from: "0.2.0")
 ]
 ```
 

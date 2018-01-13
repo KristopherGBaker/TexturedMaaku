@@ -43,7 +43,10 @@ public class TableCellNode: ASDisplayNode, ASTextNodeDelegate, Linkable {
     ///     - alignment: The markdown table alignment.
     ///     - style: The document style.
     private func setupTable(_ cell: TableCell, row: TableLine, alignment: TableAlignment, style: DocumentStyle) {
-        let cellStyle = row is TableHeader ? style.maakuStyle.strong() : style.maakuStyle
+        var cellStyle = style.maakuStyle
+        if row is TableHeader {
+            cellStyle.strong()
+        }
         let attributedText = NSMutableAttributedString(attributedString: cell.attributedText(style: cellStyle))
 
         let range = NSRange(location: 0, length: attributedText.string.utf16.count)

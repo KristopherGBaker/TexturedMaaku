@@ -34,7 +34,7 @@ public class CodeBlockNode: ASDisplayNode {
     /// - Returns:
     ///     The initialized CodeBlockNode.
     public init(codeBlock: CodeBlock, style: DocumentStyle, nested: Bool = false) {
-        insets = style.insets(.codeBlock)
+        insets = style.insets.codeBlock
         self.nested = nested
         super.init()
 
@@ -62,7 +62,7 @@ public class CodeBlockNode: ASDisplayNode {
 
         backgroundNode.image = UIImage.as_resizableRoundedImage(withCornerRadius: 3.0,
                                                                 cornerColor: nil,
-                                                                fill: style.color(.codeBlockBackground))
+                                                                fill: style.colors.codeBlockBackground)
     }
 
     public override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {

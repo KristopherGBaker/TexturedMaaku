@@ -28,7 +28,7 @@ open class DocumentViewController: ASViewController<DocumentNode>, DocumentNodeD
     ///
     /// - Returns:
     ///     The initialized DocumentViewController.
-    public init(document: Document, style: DocumentStyle = DocumentStyle()) {
+    public init(document: Document, style: DocumentStyle = DefaultDocumentStyle()) {
         self.documentStyle = style
         super.init(node: DocumentNode(document: document, style: style))
         node.delegate = self
@@ -40,7 +40,7 @@ open class DocumentViewController: ASViewController<DocumentNode>, DocumentNodeD
 
     open override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = documentStyle.color(.background)
+        view.backgroundColor = documentStyle.colors.background
     }
 
     /// Called when a document link is tapped.
@@ -78,7 +78,9 @@ open class DocumentViewController: ASViewController<DocumentNode>, DocumentNodeD
     /// Subclasses may use this to update the document style.
     /// Subclasses do not need to call super.
     open func contentSizeCategoryChange(_ contentSizeCategory: UIContentSizeCategory) {
-        documentStyle = documentStyle.style(maakuStyle: documentStyle.maakuStyle.preferredFonts())
+        var style = documentStyle.maakuStyle
+        style.fonts = DefaultFontStyle()
+        documentStyle.maakuStyle = style
     }
 
 }

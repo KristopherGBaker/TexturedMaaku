@@ -37,7 +37,7 @@ public class FootnoteDefinitionNode: ASDisplayNode, ASTextNodeDelegate, Linkable
     /// - Returns:
     ///     The initialized FootnoteDefinitionNode.
     public init(footnoteDefinition: FootnoteDefinition, style: DocumentStyle, nested: Bool = false) {
-        insets = style.insets(.list)
+        insets = style.insets.list
         self.nested = nested
         super.init()
 
@@ -52,14 +52,15 @@ public class FootnoteDefinitionNode: ASDisplayNode, ASTextNodeDelegate, Linkable
     ///     - style: The document style.
     private func setupFootnoteDefinition(_ footnoteDefinition: FootnoteDefinition, style: DocumentStyle) {
         let attribs: [NSAttributedStringKey: Any] = [
-            .foregroundColor: style.maakuStyle.color(.paragraph),
-            .font: style.maakuStyle.font(.paragraph)
+            .foregroundColor: style.maakuStyle.colors.paragraph,
+            .font: style.maakuStyle.fonts.paragraph
         ]
 
         textNode.style.flexBasis = ASDimensionMake(30.0)
         textNode.attributedText = NSAttributedString(string: "\(footnoteDefinition.number).", attributes: attribs)
 
-        let itemStyle = style.inset(type: .paragraph, insets: .zero)
+        var itemStyle = style
+        itemStyle.insets.paragraph = .zero
 
         for item in footnoteDefinition.items {
             if let displayNode = item.displayNode(style: itemStyle, nested: true) {

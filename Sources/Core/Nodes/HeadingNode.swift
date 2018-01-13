@@ -37,7 +37,7 @@ public class HeadingNode: ASDisplayNode, ASTextNodeDelegate, Linkable {
     /// - Returns:
     ///     The initialized HeadingNode.
     public init(heading: Heading, style: DocumentStyle, nested: Bool = false) {
-        insets = style.insets(.heading)
+        insets = style.insets.heading
         self.nested = nested
         super.init()
 
@@ -54,7 +54,7 @@ public class HeadingNode: ASDisplayNode, ASTextNodeDelegate, Linkable {
         var items = heading.items
 
         // check for circle headers and update items as needed
-        if style.circleHeadersEnabled, items.count > 0, let markdownText = items[0] as? Text,
+        if style.values.circleHeadersEnabled, items.count > 0, let markdownText = items[0] as? Text,
             let numHeader = markdownText.text.characterHeaderMatch() {
             var numberHeaderText = numHeader
 

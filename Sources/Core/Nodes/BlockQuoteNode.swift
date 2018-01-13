@@ -40,8 +40,8 @@ public class BlockQuoteNode: ASDisplayNode, ASTextNodeDelegate, Linkable, LinkDe
     /// - Returns:
     ///     The initialized ParagraphNode.
     public init(blockQuote: BlockQuote, style: DocumentStyle, nested: Bool = false) {
-        lineWidth = style.float(.blockQuoteLineWidth)
-        insets = style.insets(.blockQuote)
+        lineWidth = style.values.blockQuoteLineWidth
+        insets = style.insets.blockQuote
         self.nested = nested
         super.init()
 
@@ -56,10 +56,11 @@ public class BlockQuoteNode: ASDisplayNode, ASTextNodeDelegate, Linkable, LinkDe
     ///     - style: The document style.
     private func setupBlockQuote(_ blockQuote: BlockQuote, style: DocumentStyle) {
         line.style.flexBasis = ASDimensionMake(lineWidth)
-        line.backgroundColor = style.color(.blockQuoteLine)
+        line.backgroundColor = style.colors.blockQuoteLine
 
-        let insets = UIEdgeInsets(top: 0, left: style.insets(.blockQuote).left, bottom: 0, right: 0)
-        let itemStyle = style.inset(type: .blockQuote, insets: insets)
+        let insets = UIEdgeInsets(top: 0, left: style.insets.blockQuote.left, bottom: 0, right: 0)
+        var itemStyle = style
+        itemStyle.insets.blockQuote = insets
 
         for item in blockQuote.items {
             if let displayNode = item.displayNode(style: itemStyle, nested: true) {

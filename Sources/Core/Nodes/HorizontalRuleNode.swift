@@ -29,12 +29,12 @@ public class HorizontalRuleNode: ASDisplayNode {
     ///  - Returns:
     ///     The initialized HorizontalRuleNode.
     public init(style: DocumentStyle, nested: Bool = false) {
-        insets = style.insets(.horizontalRule)
+        insets = style.insets.horizontalRule
         self.nested = nested
 
         let hr = ASDisplayNode()
-        hr.backgroundColor = style.color(.horizontalRule)
-        hr.style.flexBasis = ASDimensionMake(style.float(.horizontalRuleHeight))
+        hr.backgroundColor = style.colors.horizontalRule
+        hr.style.flexBasis = ASDimensionMake(style.values.horizontalRuleHeight)
 
         spec = ASStackLayoutSpec(direction: .vertical,
                                  spacing: 0.0,

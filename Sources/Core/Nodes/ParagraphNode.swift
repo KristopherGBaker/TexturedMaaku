@@ -47,7 +47,7 @@ public class ParagraphNode: ASDisplayNode, ASTextNodeDelegate, Linkable {
     /// - Returns:
     ///     The initialized ParagraphNode.
     public init(paragraph: Paragraph, style: DocumentStyle, nested: Bool = false) {
-        insets = style.insets(.paragraph)
+        insets = style.insets.paragraph
         self.nested = nested
         super.init()
 

@@ -1,34 +1,34 @@
 PODS:
   - libcmark_gfm (0.28.0)
-  - Maaku/CMark (0.2.0):
+  - Maaku/CMark (0.3.0):
     - libcmark_gfm
-  - Maaku/Core (0.2.0):
+  - Maaku/Core (0.3.0):
     - Maaku/CMark
-  - Maaku/Plugins (0.2.0):
+  - Maaku/Plugins (0.3.0):
     - Maaku/Core
   - Nimble (7.0.3)
-  - PINCache (3.0.1-beta.5):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.5)
-    - PINCache/Core (= 3.0.1-beta.5)
-  - PINCache/Arc-exception-safe (3.0.1-beta.5):
+  - PINCache (3.0.1-beta.6):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
+    - PINCache/Core (= 3.0.1-beta.6)
+  - PINCache/Arc-exception-safe (3.0.1-beta.6):
     - PINCache/Core
-  - PINCache/Core (3.0.1-beta.5):
-    - PINOperation (= 1.0.3)
-  - PINOperation (1.0.3)
-  - PINRemoteImage/Core (3.0.0-beta.12):
+  - PINCache/Core (3.0.1-beta.6):
+    - PINOperation (~> 1.1.0)
+  - PINOperation (1.1)
+  - PINRemoteImage/Core (3.0.0-beta.13):
     - PINOperation
-  - PINRemoteImage/iOS (3.0.0-beta.12):
+  - PINRemoteImage/iOS (3.0.0-beta.13):
     - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.12):
-    - PINCache (= 3.0.1-beta.5)
+  - PINRemoteImage/PINCache (3.0.0-beta.13):
+    - PINCache (= 3.0.1-beta.6)
     - PINRemoteImage/Core
   - Quick (1.2.0)
-  - SwiftLint (0.24.0)
-  - Texture (2.5.1):
-    - Texture/PINRemoteImage (= 2.5.1)
-  - Texture/Core (2.5.1)
-  - Texture/PINRemoteImage (2.5.1):
-    - PINRemoteImage/iOS (= 3.0.0-beta.12)
+  - SwiftLint (0.24.2)
+  - Texture (2.6):
+    - Texture/PINRemoteImage (= 2.6)
+  - Texture/Core (2.6)
+  - Texture/PINRemoteImage (2.6):
+    - PINRemoteImage/iOS (= 3.0.0-beta.13)
     - PINRemoteImage/PINCache
     - Texture/Core
   - youtube-ios-player-helper (0.1.6)
@@ -45,14 +45,14 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   libcmark_gfm: 98c0bb2c3ad943c024fe5786d6452f43d5629f1a
-  Maaku: ddc05b59126df585d2c56ab2c10b4ad5c7a79899
+  Maaku: 3c008b6580d861022336944a5859b77df1ffd925
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  PINCache: 98e7b1ef782824ad231ade51987c218b758c30d8
-  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
-  PINRemoteImage: 0cefe720c2612960bd360710efbd6c73a1991d5f
+  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
+  PINOperation: 7f042fa6df5b606deb4bd5997654cf7033d5be1d
+  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
-  Texture: c3f06e344aa091667b7a56002e525cde674d021a
+  SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
+  Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
 PODFILE CHECKSUM: 02eb8bccee6047f9cd94cdfe01de573bb4532997

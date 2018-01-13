@@ -77,4 +77,8 @@ TexturedMaaku plugins are built on top of Maaku plugins. One example plugin is p
 
 ## Demo
 
-Open and run the demo project (`TexturedMaakuDemo/TexturedMaakuDemo.xcworkspace`) to see examples of using the framework.
+Open and run the demo project (`TexturedMaakuDemo/TexturedMaakuDemo.xcworkspace`) to see examples of using the framework. Or simply run
+
+```bash
+$ pod try TexturedMaaku
+```

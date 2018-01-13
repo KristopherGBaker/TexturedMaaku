@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TexturedMaaku"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "Native iOS CommonMark rendering in Swift using Texture and Maaku"
 
   s.description  = <<-DESC

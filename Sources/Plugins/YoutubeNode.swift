@@ -60,7 +60,7 @@ public class YoutubeNode: ASDisplayNode, NodePlugin {
     ///     The initialized YoutubeNode.
     required public init?(plugin: Plugin, style: DocumentStyle, nested: Bool) {
         self.nested = nested
-        insets = style.insets(.paragraph)
+        insets = style.insets.paragraph
 
         guard let plugin = plugin as? YoutubePlugin else {
             return nil

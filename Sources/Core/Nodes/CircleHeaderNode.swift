@@ -25,8 +25,8 @@ public class CircleHeaderNode: ASDisplayNode {
     /// - Returns:
     ///     The initialized CircleHeaderNode.
     public init(text: String, style: DocumentStyle) {
-        let radius = style.float(.circleHeaderRadius)
-        let fill = style.color(.circleHeaderBackground)
+        let radius = style.values.circleHeaderRadius
+        let fill = style.colors.circleHeaderBackground
         circleNode.image = UIImage.as_resizableRoundedImage(withCornerRadius: radius,
                                                             cornerColor: nil,
                                                             fill: fill)
@@ -37,8 +37,8 @@ public class CircleHeaderNode: ASDisplayNode {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
         let headerAttribs: [NSAttributedStringKey: Any] = [
-            .font: style.circleHeaderFont,
-            .foregroundColor: style.color(.circleHeaderForeground),
+            .font: style.values.circleHeaderFont,
+            .foregroundColor: style.colors.circleHeaderForeground,
             .paragraphStyle: paragraphStyle
         ]
 

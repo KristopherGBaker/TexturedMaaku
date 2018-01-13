@@ -34,7 +34,7 @@ public class ListNode: ASDisplayNode, ASTextNodeDelegate, Linkable, LinkDelegate
     /// - Returns:
     ///     The initialized ListNode.
     public init(list: List, style: DocumentStyle, nested: Bool = false) {
-        insets = style.insets(.list)
+        insets = style.insets.list
         self.nested = nested
         super.init()
 
@@ -49,15 +49,15 @@ public class ListNode: ASDisplayNode, ASTextNodeDelegate, Linkable, LinkDelegate
     ///     - ordered: Indicates if the list ordered or bulleted.
     ///     - style: The document style.
     public func setupList(_ list: List, ordered: Bool, style: DocumentStyle) {
-        let paragraphFont = style.maakuStyle.font(.paragraph)
+        let paragraphFont = style.maakuStyle.fonts.paragraph
 
         let attribs: [NSAttributedStringKey: Any] = [
-            .foregroundColor: style.maakuStyle.color(.paragraph),
+            .foregroundColor: style.maakuStyle.colors.paragraph,
             .font: UIFont.monospacedDigitSystemFont(ofSize: paragraphFont.pointSize, weight: .regular)
         ]
 
         for (index, item) in list.items.enumerated() {
-            let listNum = ordered ? "\(index + 1)." : style.unorderedListSymbol
+            let listNum = ordered ? "\(index + 1)." : style.values.unorderedListSymbol
             let valueNode: ASDisplayNode
 
             if let displayNode = item.displayNode(style: style, nested: true) {

@@ -72,7 +72,7 @@ public class DocumentNode: ASDisplayNode {
         super.init()
 
         automaticallyManagesSubnodes = true
-        backgroundColor = style.color(.background)
+        backgroundColor = style.colors.background
         setupCollectionNode()
     }
 
@@ -118,7 +118,7 @@ public class DocumentNode: ASDisplayNode {
     }
 
     public override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        return ASInsetLayoutSpec(insets: documentStyle.insets(.document), child: collectionNode)
+        return ASInsetLayoutSpec(insets: documentStyle.insets.document, child: collectionNode)
     }
 
     /// Scrolls to the footnote definition matching the url.

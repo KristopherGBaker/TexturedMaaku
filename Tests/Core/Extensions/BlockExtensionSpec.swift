@@ -16,7 +16,7 @@ class BlockExtensionSpec: QuickSpec {
 
     // swiftlint:disable function_body_length
     override func spec() {
-        let style = DocumentStyle()
+        let style: DocumentStyle = DefaultDocumentStyle()
 
         describe("displayNode(style:nested:)") {
             context("Paragraph") {

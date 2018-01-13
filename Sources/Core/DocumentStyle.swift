@@ -9,347 +9,260 @@
 import Maaku
 import UIKit
 
-/// Represents the styles to apply when rendering a document.
-public struct DocumentStyle: Equatable {
+/// Represents a document color.
+public protocol DocumentColors {
 
-    /// Represents a document color.
-    public enum ColorType {
+    /// Document background color.
+    var background: UIColor { get set }
 
-        /// Document background color.
-        case background
+    /// Blockquote line color.
+    var blockQuoteLine: UIColor { get set }
 
-        /// Blockquote line color.
-        case blockQuoteLine
+    /// Circle header background color.
+    var circleHeaderBackground: UIColor { get set }
 
-        /// Circle header background color.
-        case circleHeaderBackground
+    /// Circle header foreground color.
+    var circleHeaderForeground: UIColor { get set }
 
-        /// Circle header foreground color.
-        case circleHeaderForeground
+    /// Code block background color.
+    var codeBlockBackground: UIColor { get set }
 
-        /// Code block background color.
-        case codeBlockBackground
+    /// Horizontal rule color.
+    var horizontalRule: UIColor { get set }
 
-        /// Horizontal rule color.
-        case horizontalRule
+}
 
-    }
+/// Represents document insets.
+public protocol DocumentInsets {
 
-    /// Represents document insets.
-    public enum InsetType {
+    /// Blockquote insets.
+    var blockQuote: UIEdgeInsets { get set }
 
-        /// Blockquote insets.
-        case blockQuote
+    /// Code block insets.
+    var codeBlock: UIEdgeInsets { get set }
 
-        /// Code block insets.
-        case codeBlock
+    /// Document insets.
+    var document: UIEdgeInsets { get set }
 
-        /// Document insets.
-        case document
+    /// Footnote definition insets.
+    var footNoteDefinition: UIEdgeInsets { get set }
 
-        /// Footnote definition insets.
-        case footNoteDefinition
+    /// Heading insets.
+    var heading: UIEdgeInsets { get set }
 
-        /// Heading insets.
-        case heading
+    /// Horizontal rule insets.
+    var horizontalRule: UIEdgeInsets { get set }
 
-        /// Horizontal rule insets.
-        case horizontalRule
+    /// List insets.
+    var list: UIEdgeInsets { get set }
 
-        /// List insets.
-        case list
+    /// Paragraph insets.
+    var paragraph: UIEdgeInsets { get set }
 
-        /// Paragraph insets.
-        case paragraph
+    /// Table insets.
+    var table: UIEdgeInsets { get set }
 
-        /// Table insets.
-        case table
+}
 
-    }
+/// Represents a document value.
+public protocol DocumentValues {
 
-    /// Represents a document CGFloat value.
-    public enum FloatType {
+    /// Blockquote line width.
+    var blockQuoteLineWidth: CGFloat { get set }
 
-        /// Blockquote line width.
-        case blockQuoteLineWidth
+    /// Horizontal rule height.
+    var horizontalRuleHeight: CGFloat { get set }
 
-        /// Horizontal rule height.
-        case horizontalRuleHeight
-
-        /// Circle header radius.
-        case circleHeaderRadius
-    }
-
-    /// The insets.
-    private let insets: [InsetType: UIEdgeInsets]
-
-    /// The colors.
-    private let colors: [ColorType: Color]
-
-    /// The floats.
-    private let floats: [FloatType: CGFloat]
-
-    /// The Maaku style.
-    public let maakuStyle: Style
+    /// Circle header radius.
+    var circleHeaderRadius: CGFloat { get set }
 
     /// The circle header font.
-    public let circleHeaderFont: UIFont
+    var circleHeaderFont: UIFont { get set }
 
     /// The unordered list symbol. Defaults to •.
-    public let unorderedListSymbol: String
+    var unorderedListSymbol: String { get set }
 
     /// Indicates if circle headers are enabled, defaults to true.
-    public let circleHeadersEnabled: Bool
+    var circleHeadersEnabled: Bool { get set }
+}
+
+/// Represents the styles to apply when rendering a document.
+public protocol DocumentStyle {
+
+    /// The insets.
+    var insets: DocumentInsets { get set }
+
+    /// The colors.
+    var colors: DocumentColors { get set }
+
+    /// The floats.
+    var values: DocumentValues { get set }
+
+    /// The Maaku style.
+    var maakuStyle: Style { get set }
+
+}
+
+/// Represents the default document colors.
+public struct DefaultDocumentColors: DocumentColors {
+
+    /// The background color.
+    public var background: UIColor
+
+    /// The blockquote line color.
+    public var blockQuoteLine: UIColor
+
+    /// The circle header background color.
+    public var circleHeaderBackground: UIColor
+
+    /// The circle header foreground color.
+    public var circleHeaderForeground: UIColor
+
+    /// The code block background color.
+    public var codeBlockBackground: UIColor
+
+    /// The horizontal rule color.
+    public var horizontalRule: UIColor
+
+    /// Initializes a DocumentColors with the default values.
+    ///
+    /// - Returns:
+    ///     The initialized DocumentColors.
+    public init() {
+        background = .white
+        blockQuoteLine = UIColor(white: 0.52, alpha: 1.0)
+        horizontalRule = UIColor(white: 0.28, alpha: 1.0)
+        codeBlockBackground = UIColor(white: 0.95, alpha: 1.0)
+        circleHeaderBackground = .black
+        circleHeaderForeground = .white
+    }
+}
+
+/// Represents the default document insets.
+public struct DefaultDocumentInsets: DocumentInsets {
+
+    /// The blockquote insets.
+    public var blockQuote: UIEdgeInsets
+
+    /// The code block insets.
+    public var codeBlock: UIEdgeInsets
+
+    /// The document insets.
+    public var document: UIEdgeInsets
+
+    /// The footnote definition insets.
+    public var footNoteDefinition: UIEdgeInsets
+
+    /// The heading insets.
+    public var heading: UIEdgeInsets
+
+    /// The horizontal rule insets.
+    public var horizontalRule: UIEdgeInsets
+
+    /// The list insets.
+    public var list: UIEdgeInsets
+
+    /// The paragraph insets.
+    public var paragraph: UIEdgeInsets
+
+    /// The table insets.
+    public var table: UIEdgeInsets
+
+    /// Initializes a DocumentInsets with the default values.
+    ///
+    /// - Returns:
+    ///     The initialized DocumentInsets.
+    public init() {
+        document = .zero
+        blockQuote = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
+        codeBlock = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
+        footNoteDefinition = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
+        heading = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
+        horizontalRule = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
+        list = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
+        paragraph = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
+        table = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
+    }
+}
+
+/// Represents the default document values.
+public struct DefaultDocumentValues: DocumentValues {
+
+    /// The blockquote line width.
+    public var blockQuoteLineWidth: CGFloat
+
+    /// The horizontal rule height.
+    public var horizontalRuleHeight: CGFloat
+
+    /// The circle header radius.
+    public var circleHeaderRadius: CGFloat
+
+    /// The circle header font.
+    public var circleHeaderFont: UIFont
+
+    /// The unordered list symbol.
+    public var unorderedListSymbol: String
+
+    /// The circle headers enabled.
+    public var circleHeadersEnabled: Bool
+
+    /// Initializes a DocumentValues with the default values.
+    ///
+    /// - Returns:
+    ///     The initialized DocumentValues.
+    public init() {
+        circleHeaderFont = UIFont.systemFont(ofSize: 14, weight: .heavy)
+        unorderedListSymbol = "•"
+        circleHeadersEnabled = true
+        blockQuoteLineWidth = 3.0
+        circleHeaderRadius = 15.5
+        horizontalRuleHeight = 1.0 / UIScreen.main.scale
+    }
+}
+
+/// Represents the default document style.
+public struct DefaultDocumentStyle: DocumentStyle {
+
+    /// The insets.
+    public var insets: DocumentInsets
+
+    /// The colors.
+    public var colors: DocumentColors
+
+    /// The values.
+    public var values: DocumentValues
+
+    /// The Maaku style.
+    public var maakuStyle: Style
 
     /// Initializes a DocumentStyle with the default values.
     ///
     /// - Returns:
     ///     The initialized DocumentStyle.
     public init() {
-        maakuStyle = Style()
-        circleHeaderFont = UIFont.systemFont(ofSize: 14, weight: .heavy)
-        unorderedListSymbol = "•"
-        circleHeadersEnabled = true
-
-        var colors = [ColorType: UIColor]()
-        colors[.background] = .white
-        colors[.blockQuoteLine] = UIColor(white: 0.52, alpha: 1.0)
-        colors[.horizontalRule] = UIColor(white: 0.28, alpha: 1.0)
-        colors[.codeBlockBackground] = UIColor(white: 0.95, alpha: 1.0)
-        colors[.circleHeaderBackground] = .black
-        colors[.circleHeaderForeground] = .white
-        self.colors = colors
-
-        var insets = [InsetType: UIEdgeInsets]()
-        insets[.document] = .zero
-        insets[.blockQuote] = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
-        insets[.codeBlock] = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
-        insets[.footNoteDefinition] = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
-        insets[.heading] = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
-        insets[.horizontalRule] = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
-        insets[.list] = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
-        insets[.paragraph] = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
-        insets[.table] = UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
-        self.insets = insets
-
-        var floats = [FloatType: CGFloat]()
-        floats[.blockQuoteLineWidth] = 3.0
-        floats[.circleHeaderRadius] = 15.5
-        floats[.horizontalRuleHeight] = 1.0 / UIScreen.main.scale
-        self.floats = floats
+        colors = DefaultDocumentColors()
+        insets = DefaultDocumentInsets()
+        maakuStyle = DefaultStyle()
+        values = DefaultDocumentValues()
     }
 
     /// Initializes a DocumentStyle with the specified values.
     ///
     /// - Parameters:
-    ///     - maakuStyle: The Maaku style.
-    ///     - circleHeaderFont: The circle header font.
-    ///     - unorderedListSymbol: The unordered list symbol.
-    ///     - circleHeadersEnabled: Has circle headers enabled.
     ///     - colors: The colors.
     ///     - insets: The insets.
-    ///     - floats: The float values.
+    ///     - maakuStyle: The Maaku style.
+    ///     - values: The values.
     /// - Returns:
     ///     The initialized DocumentStyle.
-    public init(maakuStyle: Style,
-                circleHeaderFont: UIFont,
-                unorderedListSymbol: String,
-                circleHeadersEnabled: Bool,
-                colors: [ColorType: UIColor],
-                insets: [InsetType: UIEdgeInsets],
-                floats: [FloatType: CGFloat]) {
-        self.maakuStyle = maakuStyle
-        self.circleHeaderFont = circleHeaderFont
-        self.unorderedListSymbol = unorderedListSymbol
-        self.circleHeadersEnabled = circleHeadersEnabled
+    public init(colors: DocumentColors,
+                insets: DocumentInsets,
+                maakuStyle: Style,
+                values: DocumentValues) {
         self.colors = colors
         self.insets = insets
-        self.floats = floats
-    }
-
-    /// Returns the inset for the specified type.
-    ///
-    /// - Parameters:
-    ///     - type: The inset type.
-    /// - Returns:
-    ///     The inset for the specified type.
-    public func insets(_ type: InsetType) -> UIEdgeInsets {
-        guard let inset = insets[type] else {
-            assertionFailure("font not found for type: \(type)")
-            return .zero
-        }
-
-        return inset
-    }
-
-    /// Returns the color for the specified type.
-    ///
-    /// - Parameters:
-    ///     - type: The color type.
-    /// - Returns:
-    ///     The color for the specified type.
-    public func color(_ type: ColorType) -> Color {
-        guard let color = colors[type] else {
-            assertionFailure("color not found for type: \(type)")
-            return Color(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        }
-
-        return color
-    }
-
-    /// Returns the float value for the specified type.
-    ///
-    /// - Parameters:
-    ///     - type: The float type.
-    /// - Returns:
-    ///     The float value for the specified type.
-    public func float(_ type: FloatType) -> CGFloat {
-        guard let value = floats[type] else {
-            assertionFailure("float value not found for type: \(type)")
-            return 0.0
-        }
-
-        return value
-    }
-
-}
-
-/// DocumentStyle extensions.
-public extension DocumentStyle {
-
-    public static func == (lhs: DocumentStyle, rhs: DocumentStyle) -> Bool {
-        return
-            lhs.maakuStyle == rhs.maakuStyle &&
-            lhs.circleHeaderFont == rhs.circleHeaderFont &&
-            lhs.unorderedListSymbol == rhs.unorderedListSymbol &&
-            lhs.circleHeadersEnabled == rhs.circleHeadersEnabled &&
-            lhs.colors == rhs.colors &&
-            lhs.insets == rhs.insets &&
-            lhs.floats == rhs.floats
-    }
-
-    /// Returns an updated DocumentStyle with the specified Maaku style.
-    ///
-    /// - Parameters:
-    ///     - maakuStyle: The Maaku style.
-    /// - Returns:
-    ///     - The updated DocumentStyle.
-    public func style(maakuStyle: Style) -> DocumentStyle {
-        return DocumentStyle(maakuStyle: maakuStyle,
-                             circleHeaderFont: circleHeaderFont,
-                             unorderedListSymbol: unorderedListSymbol,
-                             circleHeadersEnabled: circleHeadersEnabled,
-                             colors: colors,
-                             insets: insets,
-                             floats: floats)
-    }
-
-    /// Returns an updated DocumentStyle with the specified color.
-    ///
-    /// - Parameters:
-    ///     - type: The color type.
-    ///     - color: The color.
-    /// - Returns:
-    ///     - The updated DocumentStyle.
-    public func color(type: ColorType, color: UIColor) -> DocumentStyle {
-        var updatedColors = colors
-        updatedColors[type] = color
-
-        return DocumentStyle(maakuStyle: maakuStyle,
-                             circleHeaderFont: circleHeaderFont,
-                             unorderedListSymbol: unorderedListSymbol,
-                             circleHeadersEnabled: circleHeadersEnabled,
-                             colors: updatedColors,
-                             insets: insets,
-                             floats: floats)
-    }
-
-    /// Returns an updated DocumentStyle with the specified circle header font.
-    ///
-    /// - Parameters:
-    ///     - circleHeaderFont: The circle header font.
-    /// - Returns:
-    ///     - The updated DocumentStyle.
-    public func font(circleHeader circleHeaderFont: UIFont) -> DocumentStyle {
-        return DocumentStyle(maakuStyle: maakuStyle,
-                             circleHeaderFont: circleHeaderFont,
-                             unorderedListSymbol: unorderedListSymbol,
-                             circleHeadersEnabled: circleHeadersEnabled,
-                             colors: colors,
-                             insets: insets,
-                             floats: floats)
-    }
-
-    /// Returns an updated DocumentStyle with the specified unordered list symbol.
-    ///
-    /// - Parameters:
-    ///     - unorderedListSymbol: The unordered list symbol.
-    /// - Returns:
-    ///     - The updated DocumentStyle.
-    public func symbol(unorderedList unorderedListSymbol: String) -> DocumentStyle {
-        return DocumentStyle(maakuStyle: maakuStyle,
-                             circleHeaderFont: circleHeaderFont,
-                             unorderedListSymbol: unorderedListSymbol,
-                             circleHeadersEnabled: circleHeadersEnabled,
-                             colors: colors,
-                             insets: insets,
-                             floats: floats)
-    }
-
-    /// Returns an updated DocumentStyle with the circle headers enabled/disabled.
-    ///
-    /// - Parameters:
-    ///     - circleHeadersEnabled: Pass true to enable circle headers, false to disable..
-    /// - Returns:
-    ///     - The updated DocumentStyle.
-    public func enable(circleHeaders circleHeadersEnabled: Bool) -> DocumentStyle {
-        return DocumentStyle(maakuStyle: maakuStyle,
-                             circleHeaderFont: circleHeaderFont,
-                             unorderedListSymbol: unorderedListSymbol,
-                             circleHeadersEnabled: circleHeadersEnabled,
-                             colors: colors,
-                             insets: insets,
-                             floats: floats)
-    }
-
-    /// Returns an updated DocumentStyle with the specified insets.
-    ///
-    /// - Parameters:
-    ///     - type: The insets type.
-    ///     - insets: The insets.
-    /// - Returns:
-    ///     - The updated DocumentStyle.
-    public func inset(type: InsetType, insets: UIEdgeInsets) -> DocumentStyle {
-        var updatedInsets = self.insets
-        updatedInsets[type] = insets
-
-        return DocumentStyle(maakuStyle: maakuStyle,
-                             circleHeaderFont: circleHeaderFont,
-                             unorderedListSymbol: unorderedListSymbol,
-                             circleHeadersEnabled: circleHeadersEnabled,
-                             colors: colors,
-                             insets: updatedInsets,
-                             floats: floats)
-    }
-
-    /// Returns an updated DocumentStyle with the specified float value.
-    ///
-    /// - Parameters:
-    ///     - type: The float value type.
-    ///     - value: The float value.
-    /// - Returns:
-    ///     - The updated DocumentStyle.
-    public func float(type: FloatType, value: CGFloat) -> DocumentStyle {
-        var updatedFloata = floats
-        updatedFloata[type] = value
-
-        return DocumentStyle(maakuStyle: maakuStyle,
-                             circleHeaderFont: circleHeaderFont,
-                             unorderedListSymbol: unorderedListSymbol,
-                             circleHeadersEnabled: circleHeadersEnabled,
-                             colors: colors,
-                             insets: insets,
-                             floats: updatedFloata)
+        self.maakuStyle = maakuStyle
+        self.values = values
     }
 
 }

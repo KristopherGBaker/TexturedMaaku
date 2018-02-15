@@ -6,6 +6,7 @@ use_frameworks!
 abstract_target 'TexturedMaakuDemoTargets' do
   pod 'TexturedMaaku/Core', :path => '..'
   pod 'TexturedMaaku/Plugins', :path => '..'
+  pod 'TexturedMaaku/SyntaxColors', :path => '..'
 
   target 'TexturedMaakuDemo' do
     platform :ios, '11.0'

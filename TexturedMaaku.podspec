@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TexturedMaaku"
-  s.version      = "0.2.0"
+  s.version      = "0.3.0"
   s.summary      = "Native iOS CommonMark rendering in Swift using Texture and Maaku"
 
   s.description  = <<-DESC
@@ -29,8 +29,12 @@ Pod::Spec.new do |s|
       plugins.dependency 'youtube-ios-player-helper'
   end
   
-#  s.subspec 'SyntaxColors' do |syntax|
-#      syntax.dependency 'SyntaxKit'
-#  end
+  s.subspec 'SyntaxColors' do |syntax|
+      syntax.dependency 'Highlightr'
+      syntax.xcconfig = {
+          'OTHER_SWIFT_FLAGS' => '$(inherited) -DTEXTURED_MAAKU_SYNTAX_COLORS',
+          'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) TEXTURED_MAAKU_SYNTAX_COLORS=1'
+      }
+  end
 
 end

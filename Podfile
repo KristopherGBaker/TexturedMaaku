@@ -4,6 +4,7 @@ inhibit_all_warnings!
 use_frameworks!
 
 abstract_target 'TexturedMaakuTargets' do
+  pod 'Highlightr'
   pod 'Maaku/CMark'
   pod 'Maaku/Core'
   pod 'Maaku/Plugins'

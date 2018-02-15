@@ -7,6 +7,9 @@
 //
 
 import AsyncDisplayKit
+#if TEXTURED_MAAKU_SYNTAX_COLORS
+import Highlightr
+#endif
 import Maaku
 import UIKit
 
@@ -25,6 +28,11 @@ public class CodeBlockNode: ASDisplayNode {
     /// Indicates if the node is nested.
     private let nested: Bool
 
+    #if TEXTURED_MAAKU_SYNTAX_COLORS
+    /// The code highlighter.
+    private let highlighter = Highlightr()
+    #endif
+
     /// Initializes a CodeBlockNode with the specified code block and style.
     ///
     /// - Parameters:
@@ -39,6 +47,9 @@ public class CodeBlockNode: ASDisplayNode {
         super.init()
 
         automaticallyManagesSubnodes = true
+        #if TEXTURED_MAAKU_SYNTAX_COLORS
+        highlighter?.setTheme(to: "xcode")
+        #endif
         setupCodeBlock(codeBlock, style: style)
     }
 
@@ -58,7 +69,17 @@ public class CodeBlockNode: ASDisplayNode {
         // consider using https://github.com/alehed/SyntaxKit for syntax coloring (enabled as an option/subspec)
         textNode.style.flexShrink = 1.0
         textNode.style.flexGrow = 1.0
-        textNode.attributedText = CodeBlock(code: code, info: codeBlock.info).attributedText(style: style.maakuStyle)
+
+        #if TEXTURED_MAAKU_SYNTAX_COLORS
+        if let lang = codeBlock.info, !lang.isEmpty {
+            textNode.attributedText = highlighter?.highlight(code, as: lang, fastRender: true)
+        } else {
+            textNode.attributedText = highlighter?.highlight(code, fastRender: true)
+        }
+        #else
+        textNode.attributedText = CodeBlock(code: code,
+                                            info: codeBlock.info).attributedText(style: style.maakuStyle)
+        #endif
 
         backgroundNode.image = UIImage.as_resizableRoundedImage(withCornerRadius: 3.0,
                                                                 cornerColor: nil,

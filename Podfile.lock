@@ -1,10 +1,11 @@
 PODS:
+  - Highlightr (2.0.0)
   - libcmark_gfm (0.28.0)
-  - Maaku/CMark (0.3.0):
+  - Maaku/CMark (0.4.0):
     - libcmark_gfm
-  - Maaku/Core (0.3.0):
+  - Maaku/Core (0.4.0):
     - Maaku/CMark
-  - Maaku/Plugins (0.3.0):
+  - Maaku/Plugins (0.4.0):
     - Maaku/Core
   - Nimble (7.0.3)
   - PINCache (3.0.1-beta.6):
@@ -23,7 +24,7 @@ PODS:
     - PINCache (= 3.0.1-beta.6)
     - PINRemoteImage/Core
   - Quick (1.2.0)
-  - SwiftLint (0.24.2)
+  - SwiftLint (0.25.0)
   - Texture (2.6):
     - Texture/PINRemoteImage (= 2.6)
   - Texture/Core (2.6)
@@ -34,6 +35,7 @@ PODS:
   - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
+  - Highlightr
   - Maaku/CMark
   - Maaku/Core
   - Maaku/Plugins
@@ -44,17 +46,18 @@ DEPENDENCIES:
   - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
+  Highlightr: e68a91ed9067ef0a787b920dd9becbd9935c2b79
   libcmark_gfm: 98c0bb2c3ad943c024fe5786d6452f43d5629f1a
-  Maaku: 3c008b6580d861022336944a5859b77df1ffd925
+  Maaku: 08d539a59943a834e9c8781961eaf588f9ecda57
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: 7f042fa6df5b606deb4bd5997654cf7033d5be1d
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
+  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
   Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 02eb8bccee6047f9cd94cdfe01de573bb4532997
+PODFILE CHECKSUM: 498b6ea405537997a1ecb50f18e8624b6b042c85
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

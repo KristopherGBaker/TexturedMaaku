@@ -13,6 +13,7 @@ TexturedMaaku also supports plugins based on Maaku plugins. One plugin is provid
 + [Core](#core)
 + [Style](#core)
 + [Plugins](#plugins)
++ [Highlighting](#highlighting)
 + [Demo](#demo)
 
 ## Installation
@@ -74,6 +75,10 @@ Style settings for fonts, colors, insets, etc can be set using the `DocumentStyl
 ## Plugins
 
 TexturedMaaku plugins are built on top of Maaku plugins. One example plugin is provided.
+
+## Highlighting
+
+Code block syntax highlighting can be enabled by using the `TexturedMaaku/SyntaxColors` subspec.
 
 ## Demo
 

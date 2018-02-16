@@ -78,9 +78,7 @@ open class DocumentViewController: ASViewController<DocumentNode>, DocumentNodeD
     /// Subclasses may use this to update the document style.
     /// Subclasses do not need to call super.
     open func contentSizeCategoryChange(_ contentSizeCategory: UIContentSizeCategory) {
-        var style = documentStyle.maakuStyle
-        style.fonts = DefaultFontStyle()
-        documentStyle.maakuStyle = style
+        documentStyle = DefaultDocumentStyle()
     }
 
 }

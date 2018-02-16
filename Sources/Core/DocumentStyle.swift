@@ -84,6 +84,14 @@ public protocol DocumentValues {
 
     /// Indicates if circle headers are enabled, defaults to true.
     var circleHeadersEnabled: Bool { get set }
+
+    #if TEXTURED_MAAKU_SYNTAX_COLORS
+    /// The code block syntax highlighter theme.
+    var codeHighlighterTheme: String { get set }
+
+    /// The code block font.
+    var codeFont: UIFont { get set }
+    #endif
 }
 
 /// Represents the styles to apply when rendering a document.
@@ -206,6 +214,14 @@ public struct DefaultDocumentValues: DocumentValues {
     /// The circle headers enabled.
     public var circleHeadersEnabled: Bool
 
+    #if TEXTURED_MAAKU_SYNTAX_COLORS
+    /// The code block syntax highlighter theme.
+    public var codeHighlighterTheme: String
+
+    /// The code block font.
+    public var codeFont: UIFont
+    #endif
+
     /// Initializes a DocumentValues with the default values.
     ///
     /// - Returns:
@@ -217,6 +233,10 @@ public struct DefaultDocumentValues: DocumentValues {
         blockQuoteLineWidth = 3.0
         circleHeaderRadius = 15.5
         horizontalRuleHeight = 1.0 / UIScreen.main.scale
+        #if TEXTURED_MAAKU_SYNTAX_COLORS
+        codeHighlighterTheme = "xcode"
+        codeFont = UIFont.preferredFont(forTextStyle: .body)
+        #endif
     }
 }
 

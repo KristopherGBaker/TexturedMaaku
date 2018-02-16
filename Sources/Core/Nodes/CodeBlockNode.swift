@@ -48,7 +48,7 @@ public class CodeBlockNode: ASDisplayNode {
 
         automaticallyManagesSubnodes = true
         #if TEXTURED_MAAKU_SYNTAX_COLORS
-        highlighter?.setTheme(to: "xcode")
+        highlighter?.setTheme(to: style.values.codeHighlighterTheme)
         #endif
         setupCodeBlock(codeBlock, style: style)
     }
@@ -71,11 +71,27 @@ public class CodeBlockNode: ASDisplayNode {
         textNode.style.flexGrow = 1.0
 
         #if TEXTURED_MAAKU_SYNTAX_COLORS
-        if let lang = codeBlock.info, !lang.isEmpty {
-            textNode.attributedText = highlighter?.highlight(code, as: lang, fastRender: true)
-        } else {
-            textNode.attributedText = highlighter?.highlight(code, fastRender: true)
+        let attributedCode = NSMutableAttributedString()
+
+        if let highlighter = self.highlighter {
+            if let lang = codeBlock.info, !lang.isEmpty,
+                let highlighted = highlighter.highlight(code, as: lang, fastRender: true) {
+                attributedCode.append(highlighted)
+            } else if let highlighted = highlighter.highlight(code, fastRender: true) {
+                attributedCode.append(highlighted)
+            }
         }
+
+        if attributedCode.length == 0 {
+            attributedCode.append(CodeBlock(code: code,
+                                            info: codeBlock.info).attributedText(style: style.maakuStyle))
+        } else {
+            attributedCode.addAttribute(.font,
+                                        value: style.values.codeFont,
+                                        range: NSRange(location: 0, length: attributedCode.length))
+        }
+
+        textNode.attributedText = attributedCode
         #else
         textNode.attributedText = CodeBlock(code: code,
                                             info: codeBlock.info).attributedText(style: style.maakuStyle)

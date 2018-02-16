@@ -106,7 +106,7 @@
 		A276D5A61FEB26DE006D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A276D5CE1FEB2966006D5715 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A276D5CF1FEB2966006D5715 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A276D5D01FEB2966006D5715 /* TexturedMaaku.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = TexturedMaaku.podspec; sourceTree = "<group>"; };
+		A276D5D01FEB2966006D5715 /* TexturedMaaku.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = TexturedMaaku.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A276D5D41FEB29B2006D5715 /* HorizontalRuleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalRuleNode.swift; sourceTree = "<group>"; };
 		A276D5D51FEB29B2006D5715 /* ParagraphNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphNode.swift; sourceTree = "<group>"; };
 		A276D5DA1FEB29B2006D5715 /* CircleHeaderNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleHeaderNode.swift; sourceTree = "<group>"; };

@@ -17,6 +17,7 @@
 		A28847471FF5F71900558555 /* pride.md in Resources */ = {isa = PBXBuildFile; fileRef = A28847461FF5F71900558555 /* pride.md */; };
 		A288474E1FF6EDA300558555 /* index.md in Resources */ = {isa = PBXBuildFile; fileRef = A288474D1FF6EDA300558555 /* index.md */; };
 		A28847501FF6F31800558555 /* youtube.md in Resources */ = {isa = PBXBuildFile; fileRef = A288474F1FF6F31800558555 /* youtube.md */; };
+		A2C8204920367C12007892FD /* codehighlight.md in Resources */ = {isa = PBXBuildFile; fileRef = A2C8204820367C12007892FD /* codehighlight.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		A28847461FF5F71900558555 /* pride.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = pride.md; sourceTree = "<group>"; };
 		A288474D1FF6EDA300558555 /* index.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = index.md; sourceTree = "<group>"; };
 		A288474F1FF6F31800558555 /* youtube.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = youtube.md; sourceTree = "<group>"; };
+		A2C8204820367C12007892FD /* codehighlight.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = codehighlight.md; sourceTree = "<group>"; };
 		D42B6C2C5695B99EF0FE831E /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 			children = (
 				A276D5BC1FEB2737006D5715 /* AppDelegate.swift */,
 				A276D5C31FEB2737006D5715 /* Assets.xcassets */,
+				A2C8204820367C12007892FD /* codehighlight.md */,
 				A28847441FF5AA5A00558555 /* demo.md */,
 				A276D5BE1FEB2737006D5715 /* DemoViewController.swift */,
 				A288474D1FF6EDA300558555 /* index.md */,
@@ -164,6 +167,7 @@
 			files = (
 				A276D5C71FEB2737006D5715 /* LaunchScreen.storyboard in Resources */,
 				A276D6041FEB3145006D5715 /* syntax.md in Resources */,
+				A2C8204920367C12007892FD /* codehighlight.md in Resources */,
 				A276D5C41FEB2737006D5715 /* Assets.xcassets in Resources */,
 				A288474E1FF6EDA300558555 /* index.md in Resources */,
 				A28847471FF5F71900558555 /* pride.md in Resources */,

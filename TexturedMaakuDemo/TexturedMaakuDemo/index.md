@@ -1,5 +1,7 @@
 # CommonMark examples
 
+> + ## [codehighlight.md](commonmark://codehighlight)
+>     Example of code block syntax highlighting.
 > + ## [demo.md](commonmark://demo)
 >     Examples of various CommonMark elements, including nested elements.
 > + ## [pride.md](commonmark://pride)

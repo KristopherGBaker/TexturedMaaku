@@ -1,11 +1,11 @@
 PODS:
   - Highlightr (2.0.0)
   - libcmark_gfm (0.28.0)
-  - Maaku/CMark (0.4.0):
+  - Maaku/CMark (0.4.1):
     - libcmark_gfm
-  - Maaku/Core (0.4.0):
+  - Maaku/Core (0.4.1):
     - Maaku/CMark
-  - Maaku/Plugins (0.4.0):
+  - Maaku/Plugins (0.4.1):
     - Maaku/Core
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
@@ -14,7 +14,7 @@ PODS:
     - PINCache/Core
   - PINCache/Core (3.0.1-beta.6):
     - PINOperation (~> 1.1.0)
-  - PINOperation (1.1)
+  - PINOperation (1.1.1)
   - PINRemoteImage/Core (3.0.0-beta.13):
     - PINOperation
   - PINRemoteImage/iOS (3.0.0-beta.13):
@@ -29,14 +29,14 @@ PODS:
     - PINRemoteImage/iOS (= 3.0.0-beta.13)
     - PINRemoteImage/PINCache
     - Texture/Core
-  - TexturedMaaku/Core (0.2.0):
+  - TexturedMaaku/Core (0.3.0):
     - Maaku/Core
     - Texture
-  - TexturedMaaku/Plugins (0.2.0):
+  - TexturedMaaku/Plugins (0.3.0):
     - Maaku/Plugins
     - TexturedMaaku/Core
     - youtube-ios-player-helper
-  - TexturedMaaku/SyntaxColors (0.2.0):
+  - TexturedMaaku/SyntaxColors (0.3.0):
     - Highlightr
   - youtube-ios-player-helper (0.1.6)
 
@@ -52,12 +52,12 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Highlightr: e68a91ed9067ef0a787b920dd9becbd9935c2b79
   libcmark_gfm: 98c0bb2c3ad943c024fe5786d6452f43d5629f1a
-  Maaku: 08d539a59943a834e9c8781961eaf588f9ecda57
+  Maaku: 2b2ca85acc7c22ecf3ac618e5343f1c3ae2f286c
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
-  PINOperation: 7f042fa6df5b606deb4bd5997654cf7033d5be1d
+  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
-  TexturedMaaku: 74485d0df95d872205ac71adbfcea5d85d3d5cfa
+  TexturedMaaku: 1a7dee940974d64f4825e6e82e9c60789345944a
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
 PODFILE CHECKSUM: 737db194662dfa90b9a0438584f16cf876c97426

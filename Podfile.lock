@@ -1,11 +1,11 @@
 PODS:
   - Highlightr (2.0.0)
   - libcmark_gfm (0.28.0)
-  - Maaku/CMark (0.4.0):
+  - Maaku/CMark (0.4.1):
     - libcmark_gfm
-  - Maaku/Core (0.4.0):
+  - Maaku/Core (0.4.1):
     - Maaku/CMark
-  - Maaku/Plugins (0.4.0):
+  - Maaku/Plugins (0.4.1):
     - Maaku/Core
   - Nimble (7.0.3)
   - PINCache (3.0.1-beta.6):
@@ -15,7 +15,7 @@ PODS:
     - PINCache/Core
   - PINCache/Core (3.0.1-beta.6):
     - PINOperation (~> 1.1.0)
-  - PINOperation (1.1)
+  - PINOperation (1.1.1)
   - PINRemoteImage/Core (3.0.0-beta.13):
     - PINOperation
   - PINRemoteImage/iOS (3.0.0-beta.13):
@@ -48,10 +48,10 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Highlightr: e68a91ed9067ef0a787b920dd9becbd9935c2b79
   libcmark_gfm: 98c0bb2c3ad943c024fe5786d6452f43d5629f1a
-  Maaku: 08d539a59943a834e9c8781961eaf588f9ecda57
+  Maaku: 2b2ca85acc7c22ecf3ac618e5343f1c3ae2f286c
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
-  PINOperation: 7f042fa6df5b606deb4bd5997654cf7033d5be1d
+  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea

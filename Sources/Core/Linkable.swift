@@ -12,7 +12,7 @@ import Foundation
 public protocol Linkable {
 
     /// The link delegate.
-    weak var linkDelegate: LinkDelegate? { get set }
+    var linkDelegate: LinkDelegate? { get set }
 }
 
 /// The LinkDelegate protocol defines methods that allow

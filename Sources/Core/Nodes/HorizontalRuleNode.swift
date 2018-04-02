@@ -32,15 +32,15 @@ public class HorizontalRuleNode: ASDisplayNode {
         insets = style.insets.horizontalRule
         self.nested = nested
 
-        let hr = ASDisplayNode()
-        hr.backgroundColor = style.colors.horizontalRule
-        hr.style.flexBasis = ASDimensionMake(style.values.horizontalRuleHeight)
+        let separator = ASDisplayNode()
+        separator.backgroundColor = style.colors.horizontalRule
+        separator.style.flexBasis = ASDimensionMake(style.values.horizontalRuleHeight)
 
         spec = ASStackLayoutSpec(direction: .vertical,
                                  spacing: 0.0,
                                  justifyContent: .start,
                                  alignItems: .stretch,
-                                 children: [hr])
+                                 children: [separator])
 
         super.init()
         automaticallyManagesSubnodes = true

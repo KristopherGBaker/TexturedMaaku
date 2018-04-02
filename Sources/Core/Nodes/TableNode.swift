@@ -50,11 +50,11 @@ public class TableNode: ASDisplayNode, ASTextNodeDelegate, Linkable {
     private func setupTable(_ table: Table, style: DocumentStyle) {
         tableRows.append(TableRowNode(row: table.header, table: table, style: style))
 
-        let hr = ASDisplayNode()
-        hr.backgroundColor = style.colors.horizontalRule
-        hr.style.flexBasis = ASDimensionMake(style.values.horizontalRuleHeight)
-        hr.style.spacingBefore = 5.0
-        tableRows.append(hr)
+        let separator = ASDisplayNode()
+        separator.backgroundColor = style.colors.horizontalRule
+        separator.style.flexBasis = ASDimensionMake(style.values.horizontalRuleHeight)
+        separator.style.spacingBefore = 5.0
+        tableRows.append(separator)
 
         for row in table.rows {
             tableRows.append(TableRowNode(row: row, table: table, style: style))

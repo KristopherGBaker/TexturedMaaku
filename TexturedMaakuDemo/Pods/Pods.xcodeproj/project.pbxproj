@@ -135,7 +135,6 @@
 		25E289C4A599CE3A4BBFAC38905A1DE6 /* ASYogaLayoutSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27C909DAFD0BDAF1B3F64BE4F3C5EDFB /* ASYogaLayoutSpec.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		25EC69B5B33D9D4C8A264C57C8194501 /* PINSpeedRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F2884185CE42E7B312A9F5BFF78160 /* PINSpeedRecorder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2627E0531B3F3513D7A5169E8F5B572C /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = B9210544F653D6F8448EF591DA2289FB /* table.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26512E3D8C8251784E1657C1ACAF12CE /* PINOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D9EE25E9B1188DED415A21B78ECA19 /* PINOperationQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		26573CF002A4370423D20865916694F7 /* ASTextKitRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9222DAD513625D185D08C4CF041BA53D /* ASTextKitRenderer.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		266BA6C69AE0E234FA7EF4F52097A090 /* ASTextKitRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8D412620C3A803DCFAFF6D8D5BE16A /* ASTextKitRenderer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		26A3B438AFADD6662F3E907E0024AEE6 /* ASTextKitFontSizeAdjuster.mm in Sources */ = {isa = PBXBuildFile; fileRef = C0C424763A678DC0ED434DDD1C363E17 /* ASTextKitFontSizeAdjuster.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -403,11 +402,11 @@
 		748795D7A0B68A3A6C552AF9DC3688CD /* javascript.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 3E73F3BAD78AD3B07ABFCF8CA05C9BE9 /* javascript.min.js */; };
 		749FC3648D352D24516221CCF7314974 /* PINRemoteImageCategoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D18CB919BB97DE4C88215DBB6FD732C6 /* PINRemoteImageCategoryManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		752EFCF40749106BEF638EECDF86891F /* ASOverlayLayoutSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96AE2860976640F0F2CD1D7F81698A5A /* ASOverlayLayoutSpec.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7534F48305970849C37A998AD4F163F2 /* PINOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D9EE25E9B1188DED415A21B78ECA19 /* PINOperationQueue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		763CFC8D517CA3AD379AB34053C56188 /* ASTableNode+Beta.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F404502CCC9D54A9D0330D20F3152FB /* ASTableNode+Beta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		768C5A06D50EAB6DE4AE3D83087A983D /* ASTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ABACF5B93C63544A294A7AB9E40087 /* ASTabBarController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		76C5DB622294E5B4FEF0C0D199E4E038 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E41BFAD342009217B36D6CE980BD912 /* Link.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		76FD277DCB31FD9EF19BB13CA9C67BB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3F1007314A8CCB301C5C904EA642D3 /* Foundation.framework */; };
-		778ADC313F2E74AFF56DCF912297E18F /* PINOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 096D968368AEFF0F8BDDA66807A1399D /* PINOperationGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		77F2320304C74573D069E62D81D6D94F /* ASAbstractLayoutController.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF3F05D12B23944E6B9F1579E9B146C /* ASAbstractLayoutController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77F44A2ADF9D9879E0ABC8D68C843350 /* apache.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C05392ABF7FDFACB05E5AAE6A9250285 /* apache.min.js */; };
 		782C9F477BCC200D163175A25364B636 /* NSData+ImageDetectors.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB55D5C7D9D579030DC9B02C04B1865 /* NSData+ImageDetectors.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -899,6 +898,7 @@
 		FCEF762A74BB89F2B72959C5FAA1AE91 /* PINImage+WebP.h in Headers */ = {isa = PBXBuildFile; fileRef = 273C67E14CB99B2B4BF0D67D99CC4901 /* PINImage+WebP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCF7A94FF5772311C15F50DCD7C9423A /* ASVideoNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C05FDEC0770E6717BF594938CFA4E2 /* ASVideoNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD19C616E037454DBC26EB9EB126EDE3 /* ASTwoDimensionalArrayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D1A38B1CB46837672B6E58E7B297F /* ASTwoDimensionalArrayUtils.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FDD2C2E5D6B9B7D8026599910A3B479E /* PINOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 096D968368AEFF0F8BDDA66807A1399D /* PINOperationGroup.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FDF64C6D8BBF57EBBC6F0C62D004FECE /* PINSpeedRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3653F30CD5110D0043168441C74FE086 /* PINSpeedRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDF82BB0468A4B373F5DE6EEE753D9EF /* lisp.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C63A13C5851672110C26657BE6F993DB /* lisp.min.js */; };
 		FE118D27326F363C6B4447A34D8CE1E0 /* CMDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DF7112E8F9E1B5926A50B69BD22B73 /* CMDocument.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4407,8 +4407,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				43781C2431F057CE07FDC9CC75A22E03 /* PINOperation-dummy.m in Sources */,
-				778ADC313F2E74AFF56DCF912297E18F /* PINOperationGroup.m in Sources */,
-				26512E3D8C8251784E1657C1ACAF12CE /* PINOperationQueue.m in Sources */,
+				FDD2C2E5D6B9B7D8026599910A3B479E /* PINOperationGroup.m in Sources */,
+				7534F48305970849C37A998AD4F163F2 /* PINOperationQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

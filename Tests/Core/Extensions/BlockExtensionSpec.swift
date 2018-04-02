@@ -84,8 +84,8 @@ class BlockExtensionSpec: QuickSpec {
 
             context("HorizontalRule") {
                 it("gets the node") {
-                    let hr = HorizontalRule()
-                    let displayNode = hr.displayNode(style: style)
+                    let horizontalRule = HorizontalRule()
+                    let displayNode = horizontalRule.displayNode(style: style)
                     expect(displayNode).toNot(beNil())
                     expect(displayNode).to(beAKindOf(HorizontalRuleNode.self))
                 }
@@ -193,8 +193,8 @@ class BlockExtensionSpec: QuickSpec {
 
             context("HorizontalRule") {
                 it("gets the node") {
-                    let hr = HorizontalRule()
-                    let cellNode = hr.cellNode(style: style)
+                    let horizontalRule = HorizontalRule()
+                    let cellNode = horizontalRule.cellNode(style: style)
                     expect(cellNode).toNot(beNil())
                     expect(cellNode).to(beAKindOf(WrapperCellNode.self))
                     expect((cellNode as? WrapperCellNode)?.node).to(beAKindOf(HorizontalRuleNode.self))

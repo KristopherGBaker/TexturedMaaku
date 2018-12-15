@@ -112,7 +112,8 @@ open class Theme {
         if(italicCodeFont == nil || italicCodeFont.familyName != font.familyName)
         {
             italicCodeFont = RPFont(descriptor: obliqueDescriptor, size: font.pointSize)
-        } else if(italicCodeFont == nil )
+        }
+        if(italicCodeFont == nil)
         {
             italicCodeFont = font
         }
@@ -134,11 +135,11 @@ open class Theme {
         
         if styleList.count > 0
         {
-            var attrs = [NSAttributedStringKey: Any]()
+            var attrs = [AttributedStringKey: Any]()
             attrs[.font] = codeFont
             for style in styleList
             {
-                if let themeStyle = themeDict[style] as? [NSAttributedStringKey: Any]
+                if let themeStyle = themeDict[style] as? [AttributedStringKey: Any]
                 {
                     for (attrName, attrValue) in themeStyle
                     {
@@ -151,7 +152,7 @@ open class Theme {
         }
         else
         {
-            returnString = NSAttributedString(string: string, attributes:[NSAttributedStringKey.font:codeFont] )
+            returnString = NSAttributedString(string: string, attributes:[AttributedStringKey.font:codeFont] )
         }
         
         return returnString
@@ -235,7 +236,7 @@ open class Theme {
         var returnTheme = RPThemeDict()
         for (className, props) in theme
         {
-            var keyProps = [NSAttributedStringKey: AnyObject]()
+            var keyProps = [AttributedStringKey: AnyObject]()
             for (key, prop) in props
             {
                 switch key
@@ -278,7 +279,7 @@ open class Theme {
         }
     }
     
-    private func attributeForCSSKey(_ key: String) -> NSAttributedStringKey
+    private func attributeForCSSKey(_ key: String) -> AttributedStringKey
     {
         switch key {
         case "color":

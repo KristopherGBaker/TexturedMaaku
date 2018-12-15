@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		793993905854FD51EA23B13C /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42B6C2C5695B99EF0FE831E /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework */; };
 		A276D5BD1FEB2737006D5715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D5BC1FEB2737006D5715 /* AppDelegate.swift */; };
 		A276D5BF1FEB2737006D5715 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D5BE1FEB2737006D5715 /* DemoViewController.swift */; };
 		A276D5C41FEB2737006D5715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A276D5C31FEB2737006D5715 /* Assets.xcassets */; };
@@ -18,11 +17,10 @@
 		A288474E1FF6EDA300558555 /* index.md in Resources */ = {isa = PBXBuildFile; fileRef = A288474D1FF6EDA300558555 /* index.md */; };
 		A28847501FF6F31800558555 /* youtube.md in Resources */ = {isa = PBXBuildFile; fileRef = A288474F1FF6F31800558555 /* youtube.md */; };
 		A2C8204920367C12007892FD /* codehighlight.md in Resources */ = {isa = PBXBuildFile; fileRef = A2C8204820367C12007892FD /* codehighlight.md */; };
+		A75F084466D205362745D587 /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E504CAEAB392C57E50812F0B /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2733604C441CAD60A258A8D9 /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		7C589B3CB0C3B2CBC56BADFC /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A276D5B91FEB2737006D5715 /* TexturedMaakuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TexturedMaakuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A276D5BC1FEB2737006D5715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A276D5BE1FEB2737006D5715 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +33,9 @@
 		A288474D1FF6EDA300558555 /* index.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = index.md; sourceTree = "<group>"; };
 		A288474F1FF6F31800558555 /* youtube.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = youtube.md; sourceTree = "<group>"; };
 		A2C8204820367C12007892FD /* codehighlight.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = codehighlight.md; sourceTree = "<group>"; };
-		D42B6C2C5695B99EF0FE831E /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E504CAEAB392C57E50812F0B /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED36AD404F0C266D74933A4B /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig"; path = "Target Support Files/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FEE25028C7331E0CCDCF8FBA /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.debug.xcconfig"; path = "Target Support Files/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,28 +43,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793993905854FD51EA23B13C /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework in Frameworks */,
+				A75F084466D205362745D587 /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		517FCE32DBB6A6B70B570D7F /* Frameworks */ = {
+		318914CEFC05523632A87351 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D42B6C2C5695B99EF0FE831E /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework */,
+				FEE25028C7331E0CCDCF8FBA /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.debug.xcconfig */,
+				ED36AD404F0C266D74933A4B /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7FC1C4D52EC398288D6D1BD5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2733604C441CAD60A258A8D9 /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.debug.xcconfig */,
-				7C589B3CB0C3B2CBC56BADFC /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig */,
-			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		A276D5B01FEB2737006D5715 = {
@@ -72,8 +64,8 @@
 			children = (
 				A276D5BB1FEB2737006D5715 /* TexturedMaakuDemo */,
 				A276D5BA1FEB2737006D5715 /* Products */,
-				7FC1C4D52EC398288D6D1BD5 /* Pods */,
-				517FCE32DBB6A6B70B570D7F /* Frameworks */,
+				318914CEFC05523632A87351 /* Pods */,
+				D0B90CC99047D6A49C6AD07D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +95,14 @@
 			path = TexturedMaakuDemo;
 			sourceTree = "<group>";
 		};
+		D0B90CC99047D6A49C6AD07D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E504CAEAB392C57E50812F0B /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,12 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A276D5CB1FEB2737006D5715 /* Build configuration list for PBXNativeTarget "TexturedMaakuDemo" */;
 			buildPhases = (
-				39E7F06646B18EDC0EFEE055 /* [CP] Check Pods Manifest.lock */,
+				A103B8A7A4DAEEC315B8EBD6 /* [CP] Check Pods Manifest.lock */,
 				A276D5B51FEB2737006D5715 /* Sources */,
 				A276D5B61FEB2737006D5715 /* Frameworks */,
 				A276D5B71FEB2737006D5715 /* Resources */,
-				7C3F14345BAF2166BEC58065 /* [CP] Embed Pods Frameworks */,
-				AE0E00C7F0C4F3D10E12028B /* [CP] Copy Pods Resources */,
+				352066F637EADA0809FAECEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,31 +178,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		39E7F06646B18EDC0EFEE055 /* [CP] Check Pods Manifest.lock */ = {
+		352066F637EADA0809FAECEA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C3F14345BAF2166BEC58065 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Highlightr/Highlightr.framework",
 				"${BUILT_PRODUCTS_DIR}/Maaku/Maaku.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
@@ -215,6 +198,8 @@
 				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Highlightr.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Maaku.framework",
@@ -228,22 +213,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE0E00C7F0C4F3D10E12028B /* [CP] Copy Pods Resources */ = {
+		A103B8A7A4DAEEC315B8EBD6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -385,7 +377,7 @@
 		};
 		A276D5CC1FEB2737006D5715 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2733604C441CAD60A258A8D9 /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.debug.xcconfig */;
+			baseConfigurationReference = FEE25028C7331E0CCDCF8FBA /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -395,14 +387,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.TexturedMaakuDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		A276D5CD1FEB2737006D5715 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C589B3CB0C3B2CBC56BADFC /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig */;
+			baseConfigurationReference = ED36AD404F0C266D74933A4B /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -412,7 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.TexturedMaakuDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

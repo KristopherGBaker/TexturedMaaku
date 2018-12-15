@@ -4,7 +4,7 @@ inhibit_all_warnings!
 use_frameworks!
 
 abstract_target 'TexturedMaakuTargets' do
-  pod 'Highlightr'
+  pod 'Highlightr', :git => 'https://github.com/raspu/Highlightr.git', :branch => 'master'
   pod 'Maaku/CMark'
   pod 'Maaku/Core'
   pod 'Maaku/Plugins'

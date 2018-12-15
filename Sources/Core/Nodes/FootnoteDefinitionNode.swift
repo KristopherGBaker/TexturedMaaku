@@ -51,7 +51,7 @@ public class FootnoteDefinitionNode: ASDisplayNode, ASTextNodeDelegate, Linkable
     ///     - footnoteDefinition: The markdown footnote definition.
     ///     - style: The document style.
     private func setupFootnoteDefinition(_ footnoteDefinition: FootnoteDefinition, style: DocumentStyle) {
-        let attribs: [NSAttributedStringKey: Any] = [
+        let attribs: [NSAttributedString.Key: Any] = [
             .foregroundColor: style.maakuStyle.colors.paragraph,
             .font: style.maakuStyle.fonts.paragraph
         ]

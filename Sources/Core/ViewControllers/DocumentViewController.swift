@@ -62,7 +62,7 @@ open class DocumentViewController: ASViewController<DocumentNode>, DocumentNodeD
             node.scrollToHeading(fragment) {
         } else if UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url, options: [String: Any](), completionHandler: nil)
+                UIApplication.shared.open(url)
             } else {
                 UIApplication.shared.openURL(url)
             }

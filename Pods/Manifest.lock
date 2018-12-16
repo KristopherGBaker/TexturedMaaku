@@ -1,5 +1,5 @@
 PODS:
-  - Highlightr (2.0.1)
+  - Highlightr (2.1.0)
   - libcmark_gfm (0.28.3)
   - Maaku/CMark (0.6.0):
     - libcmark_gfm
@@ -65,11 +65,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Highlightr:
-    :commit: bd57404c28527b4d40ee15ce9f61fad734ad50a1
+    :commit: c38a17f24f19a73af284ee2bf9e58938a6e9f8b3
     :git: https://github.com/raspu/Highlightr.git
 
 SPEC CHECKSUMS:
-  Highlightr: 8162b4faba588963fb8852390ea9a78f166a6b99
+  Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
   libcmark_gfm: eeffeceb85cccf7db30231a6853a97a552e8422b
   Maaku: 6f2b55734c2fa1a6bd735b32645f946aa09da1ec
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae

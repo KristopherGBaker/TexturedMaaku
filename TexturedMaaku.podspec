@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/KristopherGBaker/TexturedMaaku.git", :tag => "#{s.version}" }
   s.requires_arc = true
   s.default_subspec = 'Core'
+  s.swift_version = '4.2'
   
   s.subspec 'Core' do |core|
       core.source_files = "Sources/Core/**/*.swift"

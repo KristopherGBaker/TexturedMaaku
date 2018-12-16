@@ -15,6 +15,10 @@ abstract_target 'TexturedMaakuTargets' do
   target 'TexturedMaaku' do
     platform :ios, '9.0'
   end
+  
+  target 'TexturedMaakuSyntaxColors' do
+    platform :ios, '9.0'
+  end
 
   target 'TexturedMaakuTests' do
     platform :ios, '9.0'

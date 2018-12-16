@@ -66,6 +66,7 @@
 		A2ECDADD1FF827D7003692AB /* StringExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDADC1FF827D7003692AB /* StringExtensionSpec.swift */; };
 		A2ECDADF1FF827E1003692AB /* TableAlignmentExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ECDADE1FF827E1003692AB /* TableAlignmentExtensionSpec.swift */; };
 		DF53A9448B77CE3B21B0BF5D /* Pods_TexturedMaakuTargets_TexturedMaakuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F5BC40A66634A97251FD19 /* Pods_TexturedMaakuTargets_TexturedMaakuTests.framework */; };
+		FD98CC742A74C3BA58998D4C /* Pods_TexturedMaakuTargets_TexturedMaakuSyntaxColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F059064060FF893E3A157321 /* Pods_TexturedMaakuTargets_TexturedMaakuSyntaxColors.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 
 /* Begin PBXFileReference section */
 		445E0129FDF9E55342ECC17B /* Pods-TexturedMaakuTargets-TexturedMaakuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuTargets-TexturedMaakuTests.debug.xcconfig"; path = "Target Support Files/Pods-TexturedMaakuTargets-TexturedMaakuTests/Pods-TexturedMaakuTargets-TexturedMaakuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59D0DFD107AF53E76B5FDAED /* Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors.release.xcconfig"; path = "Target Support Files/Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors/Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors.release.xcconfig"; sourceTree = "<group>"; };
+		5E4DAAC1FC23341B9C4B054F /* Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors.debug.xcconfig"; path = "Target Support Files/Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors/Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors.debug.xcconfig"; sourceTree = "<group>"; };
 		71F5BC40A66634A97251FD19 /* Pods_TexturedMaakuTargets_TexturedMaakuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturedMaakuTargets_TexturedMaakuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6BD3DF3D75F2BDAFB13774 /* Pods-TexturedMaakuTargets-TexturedMaaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuTargets-TexturedMaaku.release.xcconfig"; path = "Target Support Files/Pods-TexturedMaakuTargets-TexturedMaaku/Pods-TexturedMaakuTargets-TexturedMaaku.release.xcconfig"; sourceTree = "<group>"; };
 		A2298AEC1FEF273200A0E275 /* TexturedMaaku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TexturedMaaku.h; sourceTree = "<group>"; };
@@ -125,6 +128,7 @@
 		A2ECDAE71FF858F0003692AB /* .travis.yml */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = .travis.yml; sourceTree = "<group>"; };
 		B4C84260582FB75ABA3FC7C5 /* Pods-TexturedMaakuTargets-TexturedMaakuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuTargets-TexturedMaakuTests.release.xcconfig"; path = "Target Support Files/Pods-TexturedMaakuTargets-TexturedMaakuTests/Pods-TexturedMaakuTargets-TexturedMaakuTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6BE9D9E3FBDE8A0B48BE73E /* Pods_TexturedMaakuTargets_TexturedMaaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturedMaakuTargets_TexturedMaaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F059064060FF893E3A157321 /* Pods_TexturedMaakuTargets_TexturedMaakuSyntaxColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturedMaakuTargets_TexturedMaakuSyntaxColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F169095983795E4AD22D4E80 /* Pods-TexturedMaakuTargets-TexturedMaaku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuTargets-TexturedMaaku.debug.xcconfig"; path = "Target Support Files/Pods-TexturedMaakuTargets-TexturedMaaku/Pods-TexturedMaakuTargets-TexturedMaaku.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD98CC742A74C3BA58998D4C /* Pods_TexturedMaakuTargets_TexturedMaakuSyntaxColors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +166,7 @@
 			children = (
 				C6BE9D9E3FBDE8A0B48BE73E /* Pods_TexturedMaakuTargets_TexturedMaaku.framework */,
 				71F5BC40A66634A97251FD19 /* Pods_TexturedMaakuTargets_TexturedMaakuTests.framework */,
+				F059064060FF893E3A157321 /* Pods_TexturedMaakuTargets_TexturedMaakuSyntaxColors.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -301,6 +307,8 @@
 				7D6BD3DF3D75F2BDAFB13774 /* Pods-TexturedMaakuTargets-TexturedMaaku.release.xcconfig */,
 				445E0129FDF9E55342ECC17B /* Pods-TexturedMaakuTargets-TexturedMaakuTests.debug.xcconfig */,
 				B4C84260582FB75ABA3FC7C5 /* Pods-TexturedMaakuTargets-TexturedMaakuTests.release.xcconfig */,
+				5E4DAAC1FC23341B9C4B054F /* Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors.debug.xcconfig */,
+				59D0DFD107AF53E76B5FDAED /* Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -332,6 +340,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2414E3520357971003D962B /* Build configuration list for PBXNativeTarget "TexturedMaakuSyntaxColors" */;
 			buildPhases = (
+				3C02E01853446B67AEFE5999 /* [CP] Check Pods Manifest.lock */,
 				A2414E1520357971003D962B /* Sources */,
 				A2414E2E20357971003D962B /* Frameworks */,
 				A2414E3020357971003D962B /* Headers */,
@@ -517,6 +526,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TexturedMaakuTargets-TexturedMaakuTests/Pods-TexturedMaakuTargets-TexturedMaakuTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3C02E01853446B67AEFE5999 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A2414E3420357971003D962B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -669,6 +700,7 @@
 /* Begin XCBuildConfiguration section */
 		A2414E3620357971003D962B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E4DAAC1FC23341B9C4B054F /* Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -690,6 +722,7 @@
 		};
 		A2414E3720357971003D962B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D0DFD107AF53E76B5FDAED /* Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

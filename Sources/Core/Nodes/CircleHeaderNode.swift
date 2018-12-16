@@ -36,7 +36,7 @@ public class CircleHeaderNode: ASDisplayNode {
 
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
-        let headerAttribs: [NSAttributedStringKey: Any] = [
+        let headerAttribs: [NSAttributedString.Key: Any] = [
             .font: style.values.circleHeaderFont,
             .foregroundColor: style.colors.circleHeaderForeground,
             .paragraphStyle: paragraphStyle

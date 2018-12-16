@@ -7,6 +7,7 @@ abstract_target 'TexturedMaakuDemoTargets' do
   pod 'TexturedMaaku/Core', :path => '..'
   pod 'TexturedMaaku/Plugins', :path => '..'
   pod 'TexturedMaaku/SyntaxColors', :path => '..'
+  pod 'Highlightr', :git => 'https://github.com/raspu/Highlightr.git', :branch => 'master'
 
   target 'TexturedMaakuDemo' do
     platform :ios, '11.0'

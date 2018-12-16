@@ -51,7 +51,7 @@ public class ListNode: ASDisplayNode, ASTextNodeDelegate, Linkable, LinkDelegate
     public func setupList(_ list: List, ordered: Bool, style: DocumentStyle) {
         let paragraphFont = style.maakuStyle.fonts.paragraph
 
-        let attribs: [NSAttributedStringKey: Any] = [
+        let attribs: [NSAttributedString.Key: Any] = [
             .foregroundColor: style.maakuStyle.colors.paragraph,
             .font: UIFont.monospacedDigitSystemFont(ofSize: paragraphFont.pointSize, weight: .regular)
         ]

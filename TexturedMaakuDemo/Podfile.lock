@@ -1,11 +1,11 @@
 PODS:
-  - Highlightr (2.0.0)
-  - libcmark_gfm (0.28.0)
-  - Maaku/CMark (0.4.1):
+  - Highlightr (2.1.0)
+  - libcmark_gfm (0.28.3)
+  - Maaku/CMark (0.6.0):
     - libcmark_gfm
-  - Maaku/Core (0.4.1):
+  - Maaku/Core (0.6.0):
     - Maaku/CMark
-  - Maaku/Plugins (0.4.1):
+  - Maaku/Plugins (0.6.0):
     - Maaku/Core
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
@@ -22,44 +22,63 @@ PODS:
   - PINRemoteImage/PINCache (3.0.0-beta.13):
     - PINCache (= 3.0.1-beta.6)
     - PINRemoteImage/Core
-  - Texture (2.6):
-    - Texture/PINRemoteImage (= 2.6)
-  - Texture/Core (2.6)
-  - Texture/PINRemoteImage (2.6):
+  - Texture (2.7):
+    - Texture/PINRemoteImage (= 2.7)
+  - Texture/Core (2.7)
+  - Texture/PINRemoteImage (2.7):
     - PINRemoteImage/iOS (= 3.0.0-beta.13)
     - PINRemoteImage/PINCache
     - Texture/Core
-  - TexturedMaaku/Core (0.3.0):
+  - TexturedMaaku/Core (0.5.0):
     - Maaku/Core
     - Texture
-  - TexturedMaaku/Plugins (0.3.0):
+  - TexturedMaaku/Plugins (0.5.0):
     - Maaku/Plugins
     - TexturedMaaku/Core
     - youtube-ios-player-helper
-  - TexturedMaaku/SyntaxColors (0.3.0):
+  - TexturedMaaku/SyntaxColors (0.5.0):
     - Highlightr
   - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
+  - Highlightr (from `https://github.com/raspu/Highlightr.git`, branch `master`)
   - TexturedMaaku/Core (from `..`)
   - TexturedMaaku/Plugins (from `..`)
   - TexturedMaaku/SyntaxColors (from `..`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - libcmark_gfm
+    - Maaku
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - Texture
+    - youtube-ios-player-helper
+
 EXTERNAL SOURCES:
+  Highlightr:
+    :branch: master
+    :git: https://github.com/raspu/Highlightr.git
   TexturedMaaku:
-    :path: ..
+    :path: ".."
+
+CHECKOUT OPTIONS:
+  Highlightr:
+    :commit: c38a17f24f19a73af284ee2bf9e58938a6e9f8b3
+    :git: https://github.com/raspu/Highlightr.git
 
 SPEC CHECKSUMS:
-  Highlightr: e68a91ed9067ef0a787b920dd9becbd9935c2b79
-  libcmark_gfm: 98c0bb2c3ad943c024fe5786d6452f43d5629f1a
-  Maaku: 2b2ca85acc7c22ecf3ac618e5343f1c3ae2f286c
+  Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
+  libcmark_gfm: eeffeceb85cccf7db30231a6853a97a552e8422b
+  Maaku: 6f2b55734c2fa1a6bd735b32645f946aa09da1ec
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
-  Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
-  TexturedMaaku: 1a7dee940974d64f4825e6e82e9c60789345944a
+  Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
+  TexturedMaaku: 7d830e86d64d429144e186621ec122f77f2852e8
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 737db194662dfa90b9a0438584f16cf876c97426
+PODFILE CHECKSUM: 0406f15f365cad4d21806e583fb234add313ceb5
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.0.beta.2

@@ -4,7 +4,7 @@ inhibit_all_warnings!
 use_frameworks!
 
 abstract_target 'TexturedMaakuTargets' do
-  pod 'Highlightr'
+  pod 'Highlightr', :git => 'https://github.com/raspu/Highlightr.git', :branch => 'master'
   pod 'Maaku/CMark'
   pod 'Maaku/Core'
   pod 'Maaku/Plugins'
@@ -13,6 +13,10 @@ abstract_target 'TexturedMaakuTargets' do
   pod 'youtube-ios-player-helper'
 
   target 'TexturedMaaku' do
+    platform :ios, '9.0'
+  end
+  
+  target 'TexturedMaakuSyntaxColors' do
     platform :ios, '9.0'
   end
 

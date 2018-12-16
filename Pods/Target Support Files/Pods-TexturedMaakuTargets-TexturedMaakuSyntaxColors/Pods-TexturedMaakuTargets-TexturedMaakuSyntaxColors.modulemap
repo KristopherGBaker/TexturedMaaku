@@ -1,0 +1,6 @@
+framework module Pods_TexturedMaakuTargets_TexturedMaakuSyntaxColors {
+  umbrella header "Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors-umbrella.h"
+
+  export *
+  module * { export * }
+}

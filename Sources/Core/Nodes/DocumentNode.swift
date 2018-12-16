@@ -88,7 +88,7 @@ public class DocumentNode: ASDisplayNode {
         setupCollectionView()
 
         sizeCategoryChangeObserver =
-            NotificationCenter.default.addObserver(forName: .UIContentSizeCategoryDidChange,
+            NotificationCenter.default.addObserver(forName: UIContentSizeCategory.didChangeNotification,
                                                    object: nil,
                                                    queue: OperationQueue.main) { [weak self] _ in
             self?.delegate?.contentSizeCategoryChange(UIApplication.shared.preferredContentSizeCategory)

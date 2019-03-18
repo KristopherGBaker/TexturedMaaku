@@ -17,6 +17,7 @@
   },
   "requires_arc": true,
   "default_subspecs": "Core",
+  "swift_version": "4.2",
   "subspecs": [
     {
       "name": "Core",

@@ -16,7 +16,7 @@ public class WrapperCellNode<T: ASDisplayNode>: ASCellNode, Linkable {
     private(set) public var node: T
 
     /// The link delegate proxy.
-    public weak var linkDelegate: LinkDelegate? {
+    public var linkDelegate: LinkDelegate? {
         get {
             return (node as? Linkable)?.linkDelegate
         }

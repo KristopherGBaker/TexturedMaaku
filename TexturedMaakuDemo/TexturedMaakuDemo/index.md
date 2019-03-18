@@ -10,3 +10,5 @@
 >     A modified version of John Gruber's Markdown Syntax page.
 > + ## [youtube.md](commonmark://youtube)
 >     Example of a Youtube plugin.
+> + ## [test.md](commonmark://Test)
+>     Example of a Maaku issue.

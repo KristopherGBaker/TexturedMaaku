@@ -16,6 +16,7 @@
 		A28847471FF5F71900558555 /* pride.md in Resources */ = {isa = PBXBuildFile; fileRef = A28847461FF5F71900558555 /* pride.md */; };
 		A288474E1FF6EDA300558555 /* index.md in Resources */ = {isa = PBXBuildFile; fileRef = A288474D1FF6EDA300558555 /* index.md */; };
 		A28847501FF6F31800558555 /* youtube.md in Resources */ = {isa = PBXBuildFile; fileRef = A288474F1FF6F31800558555 /* youtube.md */; };
+		A2B4096B21CB677100233710 /* Test.md in Resources */ = {isa = PBXBuildFile; fileRef = A2B4096A21CB677100233710 /* Test.md */; };
 		A2C8204920367C12007892FD /* codehighlight.md in Resources */ = {isa = PBXBuildFile; fileRef = A2C8204820367C12007892FD /* codehighlight.md */; };
 		A75F084466D205362745D587 /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E504CAEAB392C57E50812F0B /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		A28847461FF5F71900558555 /* pride.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = pride.md; sourceTree = "<group>"; };
 		A288474D1FF6EDA300558555 /* index.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = index.md; sourceTree = "<group>"; };
 		A288474F1FF6F31800558555 /* youtube.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = youtube.md; sourceTree = "<group>"; };
+		A2B4096A21CB677100233710 /* Test.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Test.md; sourceTree = "<group>"; };
 		A2C8204820367C12007892FD /* codehighlight.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = codehighlight.md; sourceTree = "<group>"; };
 		E504CAEAB392C57E50812F0B /* Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturedMaakuDemoTargets_TexturedMaakuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED36AD404F0C266D74933A4B /* Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig"; path = "Target Support Files/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo/Pods-TexturedMaakuDemoTargets-TexturedMaakuDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				A28847461FF5F71900558555 /* pride.md */,
 				A276D6031FEB3145006D5715 /* syntax.md */,
 				A288474F1FF6F31800558555 /* youtube.md */,
+				A2B4096A21CB677100233710 /* Test.md */,
 			);
 			path = TexturedMaakuDemo;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				A276D5C71FEB2737006D5715 /* LaunchScreen.storyboard in Resources */,
 				A276D6041FEB3145006D5715 /* syntax.md in Resources */,
 				A2C8204920367C12007892FD /* codehighlight.md in Resources */,
+				A2B4096B21CB677100233710 /* Test.md in Resources */,
 				A276D5C41FEB2737006D5715 /* Assets.xcassets in Resources */,
 				A288474E1FF6EDA300558555 /* index.md in Resources */,
 				A28847471FF5F71900558555 /* pride.md in Resources */,

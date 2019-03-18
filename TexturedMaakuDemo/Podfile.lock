@@ -1,11 +1,11 @@
 PODS:
   - Highlightr (2.1.0)
-  - libcmark_gfm (0.28.3)
-  - Maaku/CMark (0.6.0):
+  - libcmark_gfm (0.28.3.20)
+  - Maaku/CMark (0.6.1):
     - libcmark_gfm
-  - Maaku/Core (0.6.0):
+  - Maaku/Core (0.6.1):
     - Maaku/CMark
-  - Maaku/Plugins (0.6.0):
+  - Maaku/Plugins (0.6.1):
     - Maaku/Core
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
@@ -22,12 +22,25 @@ PODS:
   - PINRemoteImage/PINCache (3.0.0-beta.13):
     - PINCache (= 3.0.1-beta.6)
     - PINRemoteImage/Core
-  - Texture (2.7):
-    - Texture/PINRemoteImage (= 2.7)
-  - Texture/Core (2.7)
-  - Texture/PINRemoteImage (2.7):
+  - Texture (2.8):
+    - Texture/AssetsLibrary (= 2.8)
+    - Texture/Core (= 2.8)
+    - Texture/MapKit (= 2.8)
+    - Texture/Photos (= 2.8)
+    - Texture/PINRemoteImage (= 2.8)
+    - Texture/Video (= 2.8)
+  - Texture/AssetsLibrary (2.8):
+    - Texture/Core
+  - Texture/Core (2.8)
+  - Texture/MapKit (2.8):
+    - Texture/Core
+  - Texture/Photos (2.8):
+    - Texture/Core
+  - Texture/PINRemoteImage (2.8):
     - PINRemoteImage/iOS (= 3.0.0-beta.13)
     - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (2.8):
     - Texture/Core
   - TexturedMaaku/Core (0.5.0):
     - Maaku/Core
@@ -65,20 +78,20 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Highlightr:
-    :commit: c38a17f24f19a73af284ee2bf9e58938a6e9f8b3
+    :commit: 87465e7ac116a4c8672fa29aae840e9c9e68bedb
     :git: https://github.com/raspu/Highlightr.git
 
 SPEC CHECKSUMS:
   Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
-  libcmark_gfm: eeffeceb85cccf7db30231a6853a97a552e8422b
-  Maaku: 6f2b55734c2fa1a6bd735b32645f946aa09da1ec
+  libcmark_gfm: 39f46473947850dcdc22508368d931a6ff6e7afa
+  Maaku: 7f775b5af621325fa7598a92d6485b5568b87031
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
-  Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
-  TexturedMaaku: 7d830e86d64d429144e186621ec122f77f2852e8
+  Texture: fc6e0157201f3a6e503d364c147b1872e365cef4
+  TexturedMaaku: f668b67bac856b66a827a8431d2bbe66918a4938
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
 PODFILE CHECKSUM: 0406f15f365cad4d21806e583fb234add313ceb5
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.6.0.rc.2

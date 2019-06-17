@@ -1,6 +1,6 @@
 {
   "name": "TexturedMaaku",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "summary": "Native iOS CommonMark rendering in Swift using Texture and Maaku",
   "description": "Native iOS CommonMark rendering in Swift using Texture (AsyncDisplayKit) and Maaku.",
   "homepage": "https://github.com/KristopherGBaker/TexturedMaaku",
@@ -13,11 +13,11 @@
   },
   "source": {
     "git": "https://github.com/KristopherGBaker/TexturedMaaku.git",
-    "tag": "0.5.0"
+    "tag": "0.6.0"
   },
   "requires_arc": true,
   "default_subspecs": "Core",
-  "swift_version": "4.2",
+  "swift_versions": "5.0",
   "subspecs": [
     {
       "name": "Core",
@@ -58,5 +58,6 @@
         "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) TEXTURED_MAAKU_SYNTAX_COLORS=1"
       }
     }
-  ]
+  ],
+  "swift_version": "5.0"
 }

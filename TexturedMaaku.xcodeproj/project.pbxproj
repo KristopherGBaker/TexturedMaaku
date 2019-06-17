@@ -310,7 +310,6 @@
 				5E4DAAC1FC23341B9C4B054F /* Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors.debug.xcconfig */,
 				59D0DFD107AF53E76B5FDAED /* Pods-TexturedMaakuTargets-TexturedMaakuSyntaxColors.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -426,6 +425,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A276D58C1FEB26DE006D5715;
 			productRefGroup = A276D5971FEB26DE006D5715 /* Products */;
@@ -491,8 +491,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TexturedMaakuTargets-TexturedMaakuTests/Pods-TexturedMaakuTargets-TexturedMaakuTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Highlightr/Highlightr.framework",
@@ -507,8 +505,6 @@
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Highlightr.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Maaku.framework",
@@ -715,7 +711,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.TexturedMaaku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -737,7 +733,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.TexturedMaaku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -875,7 +871,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.TexturedMaaku;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -896,7 +892,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.TexturedMaaku;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -910,7 +906,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.TexturedMaakuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -924,7 +920,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.TexturedMaakuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

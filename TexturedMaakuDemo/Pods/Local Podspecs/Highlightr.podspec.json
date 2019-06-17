@@ -21,7 +21,7 @@
     "osx": "10.11",
     "ios": "8.0"
   },
-  "swift_version": "4.2",
+  "swift_versions": "4.2",
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*.{swift}",
   "resources": "Pod/Assets/**/*.{css,js}",
@@ -30,5 +30,6 @@
   },
   "osx": {
     "frameworks": "AppKit"
-  }
+  },
+  "swift_version": "4.2"
 }

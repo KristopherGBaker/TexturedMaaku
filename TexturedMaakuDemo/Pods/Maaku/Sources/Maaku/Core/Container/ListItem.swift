@@ -9,7 +9,7 @@
 import Foundation
 
 /// Represents a markdown list item.
-public struct ListItem: ContainerBlock {
+public struct ListItem: Item {
 
     /// The block items.
     public let items: [Block]
@@ -36,7 +36,7 @@ public struct ListItem: ContainerBlock {
 
 public extension ListItem {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
         for item in items {

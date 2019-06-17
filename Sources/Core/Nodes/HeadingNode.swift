@@ -58,7 +58,7 @@ public class HeadingNode: ASDisplayNode, ASTextNodeDelegate, Linkable {
             let numHeader = markdownText.text.characterHeaderMatch() {
             var numberHeaderText = numHeader
 
-            if let index = numHeader.index(of: ".") {
+            if let index = numHeader.firstIndex(of: ".") {
                 numberHeaderText = String(numHeader.prefix(upTo: index))
             }
 

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TexturedMaaku"
-  s.version      = "0.6.0"
+  s.version      = "0.7.0"
   s.summary      = "Native iOS CommonMark rendering in Swift using Texture and Maaku"
 
   s.description  = <<-DESC
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/KristopherGBaker/TexturedMaaku.git", :tag => "#{s.version}" }
   s.requires_arc = true
   s.default_subspec = 'Core'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   
   s.subspec 'Core' do |core|
       core.source_files = "Sources/Core/**/*.swift"

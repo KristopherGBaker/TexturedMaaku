@@ -94,22 +94,7 @@ public class CMDocument {
             cmark_parser_free(parser)
         }
 
-        if extensions.contains(.tables), let tableExtension = cmark_find_syntax_extension("table") {
-            cmark_parser_attach_syntax_extension(parser, tableExtension)
-        }
-
-        if extensions.contains(.autolinks), let autolinkExtension = cmark_find_syntax_extension("autolink") {
-            cmark_parser_attach_syntax_extension(parser, autolinkExtension)
-        }
-
-        if extensions.contains(.strikethrough),
-            let strikethroughExtension = cmark_find_syntax_extension("strikethrough") {
-            cmark_parser_attach_syntax_extension(parser, strikethroughExtension)
-        }
-
-        if extensions.contains(.tagfilters), let tagfilterExtension = cmark_find_syntax_extension("tagfilter") {
-            cmark_parser_attach_syntax_extension(parser, tagfilterExtension)
-        }
+        try extensions.addToParser(parser)
 
         cmark_parser_feed(parser, text, text.utf8.count)
 
@@ -117,7 +102,8 @@ public class CMDocument {
             throw CMDocumentError.parsingError
         }
 
-        node = CMNode(cmarkNode: cmarkNode, freeWhenDone: true)
+        // This node is the owner of the memory, so we don't have a referenced memory owner
+        node = CMNode(cmarkNode: cmarkNode, memoryOwner: nil)
     }
 
 }
@@ -131,7 +117,7 @@ public extension CMDocument {
     ///     `CMDocumentError.renderError` if there is an error rendering the HTML.
     /// - Returns:
     ///     The HTML as a string.
-    public func renderHtml() throws -> String {
+    func renderHtml() throws -> String {
         return try node.renderHtml(options, extensions: extensions)
     }
 
@@ -141,7 +127,7 @@ public extension CMDocument {
     ///     `CMDocumentError.renderError` if there is an error rendering the XML.
     /// - Returns:
     ///     The XML as a string.
-    public func renderXml() throws -> String {
+    func renderXml() throws -> String {
         return try node.renderXml(options)
     }
 
@@ -153,7 +139,7 @@ public extension CMDocument {
     ///     `CMDocumentError.renderError` if there is an error rendering the man page.
     /// - Returns:
     ///     The man page as a string.
-    public func renderMan(width: Int32) throws -> String {
+    func renderMan(width: Int32) throws -> String {
         return try node.renderMan(options, width: width)
     }
 
@@ -165,7 +151,7 @@ public extension CMDocument {
     ///     `CMDocumentError.renderError` if there is an error rendering the common mark.
     /// - Returns:
     ///     The common mark as a string.
-    public func renderCommonMark(width: Int32) throws -> String {
+    func renderCommonMark(width: Int32) throws -> String {
         return try node.renderCommonMark(options, width: width)
     }
 
@@ -177,7 +163,7 @@ public extension CMDocument {
     ///     `CMDocumentError.renderError` if there is an error rendering the Latex.
     /// - Returns:
     ///     The Latex as a string.
-    public func renderLatex(width: Int32) throws -> String {
+    func renderLatex(width: Int32) throws -> String {
         return try node.renderLatex(options, width: width)
     }
 
@@ -189,7 +175,7 @@ public extension CMDocument {
     ///     `CMDocumentError.renderError` if there is an error rendering the plain text.
     /// - Returns:
     ///     The plain text as a string.
-    public func renderPlainText(width: Int32) throws -> String {
+    func renderPlainText(width: Int32) throws -> String {
         return try node.renderPlainText(options, width: width)
     }
 

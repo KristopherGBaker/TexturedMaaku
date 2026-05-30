@@ -1,6 +1,9 @@
 # TexturedMaaku
 
-[![Build Status](https://travis-ci.org/KristopherGBaker/TexturedMaaku.svg?branch=master)](https://travis-ci.org/KristopherGBaker/TexturedMaaku)
+> **⚠️ This project is archived and no longer maintained.**
+>
+> It builds on [Maaku](https://github.com/KristopherGBaker/Maaku) (also archived) and [Texture](http://texturegroup.org/), which is itself largely dormant. For rendering Markdown on modern iOS, see SwiftUI's built-in `AttributedString` Markdown support (iOS 15+) or [Textual](https://github.com/gonzalezreal/textual) (the maintained successor to swift-markdown-ui), with [swift-markdown](https://github.com/swiftlang/swift-markdown) for AST access. The repository remains available for reference.
+
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/TexturedMaaku.svg)](https://img.shields.io/cocoapods/v/TexturedMaaku.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/TexturedMaaku.svg?style=flat)](http://cocoadocs.org/docsets/TexturedMaaku)

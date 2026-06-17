@@ -73,6 +73,7 @@ public class DocumentNode: ASDisplayNode {
 
         automaticallyManagesSubnodes = true
         backgroundColor = style.colors.background
+        collectionNode.backgroundColor = style.colors.background
         setupCollectionNode()
     }
 
@@ -106,7 +107,6 @@ public class DocumentNode: ASDisplayNode {
     private func setupCollectionNode() {
         collectionViewLayout.minimumLineSpacing = 0.0
         collectionViewLayout.minimumInteritemSpacing = 0.0
-        collectionNode.backgroundColor = UIColor.white
     }
 
     /// Setup collection view.
